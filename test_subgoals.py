@@ -87,6 +87,13 @@ state_history ={} # key: object, value: {state:[], in:[], ground:[], underground
 for obj in object_list:
     state_history[obj]= {'state':[], 'in':[], 'ground':[], 'underground':[] } # ingredient: one-to-one
 
+subgoals_list = []
+for ii in range(0,len(subgoals)):
+    if [subgoals.Object[ii], subgoals.State[ii], subgoals.Relation_on[ii], subgoals.Relation_in[ii]] not in subgoals_list:
+        subgoals_list.append([subgoals.Object[ii], subgoals.State[ii], subgoals.Relation_on[ii], subgoals.Relation_in[ii]])
+        print(subgoals_list[-1])
+
+
 # Check subgoals
 for ii in range(0,len(subgoals)):
     flag_feasible= True
