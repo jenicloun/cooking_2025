@@ -1,0 +1,1 @@
+Ingredients : ['lemon juice', 'bowl', 'carrot', 'salad bowl', 'mayonnaise', 'salad dressing', 'refined sugar', 'sour cream', 'salad mix', 'pineapple', 'cutting board', 'raisin', 'carrot salad', '<PAD>', '<PAD>', '<PAD>']

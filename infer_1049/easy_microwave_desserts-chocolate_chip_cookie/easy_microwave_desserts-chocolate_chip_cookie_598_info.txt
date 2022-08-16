@@ -1,0 +1,1 @@
+Ingredients : ['chocolate chip', 'jar', 'flour', 'butter', 'egg white and yolk', 'refined sugar', 'sea salt', 'cookie dough', 'microwave', 'chocolate chip cookie', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

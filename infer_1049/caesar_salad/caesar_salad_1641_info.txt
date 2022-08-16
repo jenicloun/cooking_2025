@@ -1,0 +1,1 @@
+Ingredients : ['egg yolk', 'blender jar', 'garlic', 'worcestershire sauce', 'canola oil', 'relish', 'crayfish mixture', 'lemon juice', 'fish mixture', 'greek salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'cabbage', 'caesar salad']

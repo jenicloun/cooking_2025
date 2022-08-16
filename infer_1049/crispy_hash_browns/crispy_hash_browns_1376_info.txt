@@ -1,0 +1,1 @@
+Ingredients : ['grapeseed oil', 'skillet', 'stove', 'potato', 'bowl', 'coriander', 'sea salt', 'flour', 'black pepper', 'potato mixture', 'pan', 'hash brown', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

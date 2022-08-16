@@ -1,0 +1,1 @@
+Ingredients : ['cream cheese', 'cutting board', 'apple', 'cucumber', 'olive oil', 'bowl', 'celery salt', 'black pepper', 'salad dressing', 'salad', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

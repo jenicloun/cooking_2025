@@ -1,0 +1,1 @@
+Ingredients : ['cucumber', 'cutting board', 'feta cheese', 'apple', 'bowl', 'garlic salt', 'grapeseed oil', 'greek salad dressing', 'black pepper', 'salad', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

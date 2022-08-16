@@ -1,0 +1,1 @@
+Ingredients : ['tuna', 'bowl', 'microwave', 'cutting board', 'ginger', 'sea salt', 'vegetable oil', 'sesame oil', 'black pepper', 'oil mixture', 'pan', 'stove', 'cooked salmon', '<PAD>', '<PAD>', '<PAD>']

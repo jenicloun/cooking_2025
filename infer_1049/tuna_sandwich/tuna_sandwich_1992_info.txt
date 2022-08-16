@@ -1,0 +1,1 @@
+Ingredients : ['shrimp', 'bowl', 'tuna spread', 'garlic bread', 'plate', 'arugula', 'garlic butter', 'bacon', 'tuna sandwich', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

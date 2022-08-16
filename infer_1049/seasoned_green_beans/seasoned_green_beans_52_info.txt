@@ -1,0 +1,1 @@
+Ingredients : ['green bean', 'aluminium foil', 'garlic', 'red onion', 'cutting board', 'coriander', 'cooking spray', 'garlic salt', 'black pepper', 'grill', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

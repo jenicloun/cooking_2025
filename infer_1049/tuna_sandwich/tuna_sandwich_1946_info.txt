@@ -1,0 +1,1 @@
+Ingredients : ['anchovy', 'bowl', 'tuna spread', 'bread', 'plate', 'bacon', 'celery', 'butter', 'tuna sandwich', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

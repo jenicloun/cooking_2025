@@ -1,0 +1,1 @@
+Ingredients : ['anchovy', 'bowl', 'microwave', 'cutting board', 'garlic salt', 'ginger', 'black pepper', 'olive oil', 'vegetable oil', 'oil mixture', 'pan', 'stove', 'cooked salmon', '<PAD>', '<PAD>', '<PAD>']

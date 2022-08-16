@@ -1,0 +1,1 @@
+Ingredients : ['vodka', 'highball glass', 'worcestershire sauce', 'tomato juice', 'lemon', 'water ice', 'tobasco sauce', 'salt pepper mixture', 'garlic salt', 'bloody mary', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

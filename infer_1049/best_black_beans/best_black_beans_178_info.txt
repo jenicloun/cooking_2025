@@ -1,0 +1,1 @@
+Ingredients : ['red onion', 'cutting board', 'lemon grass', 'garlic', 'bowl', 'pot', 'stove', 'black bean', 'garlic salt', 'cayenne pepper', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

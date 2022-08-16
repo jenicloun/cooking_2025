@@ -1,0 +1,1 @@
+Ingredients : ['pot', 'stove', 'macaroni', 'bowl', 'milk', 'garlic salt', 'egg white and yolk', 'black pepper', 'cheese sauce', 'feta cheese', 'macaroni and cheese', 'pasta mix', 'baking tray', 'cooking spray', 'oven', '<PAD>']

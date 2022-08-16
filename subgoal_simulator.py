@@ -7,21 +7,50 @@ import numpy as np
 from collections import defaultdict, deque
 from os.path import dirname
 from collections import defaultdict
+import copy
 
 def sigmoid(x):
     return 1 / (1 +np.exp(-x))
 
+
 class Subgoal():
-    def __init__(self,filenames): # filenames: list of filenames top1, top2, top3
+    def __init__(self,goal_path,kb_path,num_top): # filenames: list of filenames top1, top2, top3
         self.goals_DF=[] # dataframe
         self.goals_list = []
-        self.num_top = len(filenames)
+        self.num_top = num_top
+        self.__csv2subgoals__(goal_path,num_top)
 
-        for ii in range(0,self.num_top):
-            self.goals_DF.append(self.__csv2DF__(filenames[ii]))
-            self.goals_list = self.__subgoal_DF2list__(self.goals_DF[ii])
+        with open(kb_path) as f:  # Read knowledge base
+            self.KB = yaml.load(f, Loader=yaml.FullLoader)
 
-    def __csv2subgoals__(self,filepath, num_top):
+        # for ii in range(0,self.num_top):
+        #     self.goals_DF.append(self.__csv2DF__(filenames[ii]))
+        #     self.goals_list = self.__subgoal_DF2list__(self.goals_DF[ii])
+
+    def __read_info__(self,filename):
+        with open(filename) as f:
+            line=f.readlines()
+        ing_list = line[0][15:-1].split(', ')
+        self.inputs = [w[1:-1] for w in ing_list]
+
+    def __read_GT__(self,filepath):
+        df = pd.read_csv(filepath)
+        len_gt = len(df.columns)
+        self.goal_gt = []
+        state_list = ['chopped','cooked','diced','exist','fried','peeled','sliced','none']
+        for ii in range(0, df.values.shape[0]):
+            states=[]
+            for jj in range(2,10):
+                if df.values[ii,jj] == 1:
+                    states.append(state_list[jj-2])
+
+            self.goal_gt.append([self.obj_list[int(df.values[ii,1])],states,self.obj_list[int(df.values[ii,10])],
+                                 self.obj_list[int(df.values[ii,11])]])
+
+        self.print_subgoal_list(self.goal_gt)
+
+
+    def __csv2subgoals__(self,filepath, num_top): # extract subgoals from csv
         df = pd.read_csv(filepath)
         len_dfc=len(df.columns)
         obj_list = []
@@ -33,7 +62,7 @@ class Subgoal():
         relation_in_list  = []
         relation_in_range = [len_dfc,0]
 
-
+        # find names of data
         for ii in range(0, len(df.columns)):
             split_text = df.columns[ii].split('_')
             if split_text[0] == 'Object':
@@ -53,41 +82,194 @@ class Subgoal():
                 relation_in_range[1] = max(relation_in_range[1], ii)
                 relation_in_list.append(split_text[3])
 
+        self.obj_list = obj_list
+        # find num_top data
+        self.goals=[]
+        self.goals_list = []
         for ii in range(0,df.values.shape[0]):
             # object
-
             val_sigmoid = sigmoid(df.values[ii,obj_range[0]:obj_range[1]+1])
             idx_sorted = np.argsort(val_sigmoid)
-            subgoal_obj = [obj_list[idx_sorted[-1-ii]] for ii in range(0,num_top)]
-            subgoal_obj_val=[val_sigmoid[idx_sorted[-1-ii]] for ii in range(0,num_top)]
+            objs = [obj_list[idx_sorted[-1-ii]] for ii in range(0,num_top)]
+            objs_val=[val_sigmoid[idx_sorted[-1-ii]] for ii in range(0,num_top)]
 
             # state
-            th_state = 0.4
+            th_state = 0.3
             val_sigmoid = sigmoid(df.values[ii, state_range[0]:state_range[1] + 1])
             idx_sorted = np.argsort(val_sigmoid)
-            subgoal_state = [state_list[idx_sorted[-1 - ii]] for ii in range(0, num_top) if
+            states = [state_list[idx_sorted[-1 - ii]] for ii in range(0, num_top) if
                            val_sigmoid[idx_sorted[-1 - ii]] > th_state]
+            if len(states)==0:
+                states=['none']
 
             # relation_on
-            th_relation = 0.4
+            th_relation = 0.3
             val_sigmoid = sigmoid(df.values[ii, relation_on_range[0]:relation_on_range[1] + 1])
             idx_sorted = np.argsort(val_sigmoid)
-            subgoal_relation_on = [relation_on_list[idx_sorted[-1 - ii]] for ii in range(0, num_top) if
+            relation_on = [relation_on_list[idx_sorted[-1 - ii]] for ii in range(0, num_top) if
                              val_sigmoid[idx_sorted[-1 - ii]] > th_relation]
+            if len(relation_on)==0:
+                relation_on=['none']
+
 
             # relation_in
-            th_relation = 0.4
+            th_relation = 0.3
             val_sigmoid = sigmoid(df.values[ii, relation_in_range[0]:relation_in_range[1] + 1])
             idx_sorted = np.argsort(val_sigmoid)
-            subgoal_relation_in = [relation_in_list[idx_sorted[-1 - ii]] for ii in range(0, num_top) if
+            relation_in = [relation_in_list[idx_sorted[-1 - ii]] for ii in range(0, num_top) if
                              val_sigmoid[idx_sorted[-1 - ii]] > th_relation]
 
-            print(subgoal_obj, subgoal_obj_val)
-            print(subgoal_state)
-            print(subgoal_relation_on)
-            print(subgoal_relation_in)
-            print('goal:', self.goals_list[ii])
+            if len(relation_in)==0:
+                relation_in=['none']
 
+            if objs[0]!='<PAD>':
+                subgoal_unit = {'object':objs, 'object_val':objs_val,'state':states,
+                                'relation_on':relation_on, 'relation_in':relation_in,
+                                'top1':[objs[0],states[0],relation_on[0],relation_in[0]],
+                                'goal':[objs[0],states[0],relation_on[0],relation_in[0]]}
+                #print(subgoal_unit['top1'])
+                #print('goal:', self.goals_list[ii])
+
+                self.goals.append(subgoal_unit)
+                self.goals_list.append(subgoal_unit['top1'].copy())
+
+                self.print_subgoal_list(self.goals_list)
+
+    def filter_samegoals(self):
+        self.goals_c=copy.deepcopy(self.goals_list)# corrected goals
+        self.idx_goal_ranking= [0] * len(self.goals) # ranking of selected goals
+
+        for nn in range(0,self.num_top):
+            for ii in range(0,len(self.goals_c)):
+                # remove nonexist objects
+
+                if self.goals_c[ii][0] not in self.inputs:
+                    next_goal, cur_rank = self.sample_valid_goal(self.goals[ii], self.goals_c[ii], self.idx_goal_ranking[ii])
+                    self.goals_c[ii] = copy.deepcopy(next_goal)
+                    self.idx_goal_ranking[ii] = cur_rank
+
+                if self.goals_c[ii][2] not in self.obj_list\
+                    or self.goals_c[ii][3] not in self.obj_list:
+                    self.goals_c[ii][0]='skip'
+
+                # Change subgoals if there are multiple same goals
+                num_same = self.goals_c.count(self.goals_c[ii])
+                if num_same >1 and self.goals_c[ii][0] !='skip':
+                    # find all indices
+                    same_idxs = []
+                    probs = []
+                    for jj in range(0,len(self.goals_c)):
+                        if self.goals_c[ii] == self.goals_c[jj]:
+                            same_idxs.append(jj)
+                            probs.append(self.goals[jj]['object_val'][self.idx_goal_ranking[jj]])
+
+                    # change subgoals- try top (n+1)
+                    idx_argsort = np.flip(np.argsort(probs))
+                    for kk in idx_argsort[1:]:
+                        jj = same_idxs[kk]
+                        next_goal, cur_rank = self.sample_valid_goal(self.goals[jj], self.goals_c[jj],
+                                                                     self.idx_goal_ranking[jj])
+                        self.goals_c[jj] = copy.deepcopy(next_goal)
+                        self.idx_goal_ranking[jj] = cur_rank
+                        # sample new one
+                        #
+                        # self.idx_goal_ranking[jj] = self.idx_goal_ranking[jj] + 1
+                        # while self.goals[jj]['object'][self.idx_goal_ranking[jj]] not in self.inputs\
+                        #         and self.idx_goal_ranking[jj]<self.num_top:
+                        #     self.idx_goal_ranking[jj] = self.idx_goal_ranking[jj] + 1
+                        #
+                        # if self.idx_goal_ranking[jj] == self.num_top:
+                        #     self.goal_c[jj][0]='skip'
+                        # else:
+                        #     self.goals_c[jj][0]=self.goals[jj]['object'][self.idx_goal_ranking[jj]]
+                        #     self.goals[jj]['goal']=self.goals_c[jj]
+        # print
+        for ii in range(0,len(self.goals_list)):
+            print(ii,':',self.goals_list[ii], self.goals_c[ii])
+
+    def sample_valid_goal(self, goal_info, cur_goal, curr_rank): # sample valid goals considering objlist and KB
+        flag_done = True
+        next_goal = copy.deepcopy(cur_goal)
+        while flag_done:
+            curr_rank = curr_rank + 1
+            if curr_rank >= self.num_top:
+                next_goal[0] = 'skip'
+                flag_done= False
+            else:
+                new_obj = goal_info['object'][curr_rank]
+                if new_obj in self.inputs:
+                    if cur_goal[1] in []:  # ['sliced', 'peeled','diced','chopped']: # check the property
+                        if cur_goal[1] in KB[new_obj]['HasProperty']:
+                            next_goal[0] = new_obj
+                            flag_done = False
+                    else:
+                        next_goal[0] = new_obj
+                        flag_done = False
+        return next_goal, curr_rank
+
+
+
+    def subgoal_simulator(self):
+        states = {}  # key: object, value: {state:[], in:[], ground:[], underground:[] } # underground - object - ground
+        subgoals_new = []
+        for obj in self.inputs:
+            if obj != '<PAD>':
+                states[obj] = {'state': [], 'in': [],'contains': [], 'ground': [], 'underground': []}  # ingredient: one-to-one
+
+        for ii in range(0, len(self.goals_c)):
+            flag_feasible = True
+
+            if self.goals_c[ii][0] == '<PAD>' or self.goals_c[ii][0] == 'skip':
+                flag_feasible = False
+            if self.goals_c[ii][1]== 'none' and self.goals_c[ii][2] == 'none' \
+                and self.goals_c[ii][3] == 'none':  # meaningless subgoal
+                flag_feasible = False
+
+            # check whether the state does not change
+            obj_cur = self.goals_c[ii][0]
+            if (self.goals_c[ii][1] in states[obj_cur]['state']) and (
+                        self.goals_c[ii][3] in states[obj_cur]['in']) \
+                        and (self.goals_c[ii][2] in states[obj_cur]['underground']): # on
+                flag_feasible = False
+
+            if flag_feasible == True:  # add subgoals and track the history
+                subgoal_modified = copy.deepcopy(self.goals_c[ii])
+
+                if self.goals_c[ii][1] not in states[obj_cur]['state']: # check state
+                    states[obj_cur]['state'].append(self.goals_c[ii][1])
+                if self.goals_c[ii][2] != 'none':      # relation_on
+                    states[obj_cur]['underground'] = states[self.goals_c[ii][2]]['underground'] + [self.goals_c[ii][2]] \
+                                                     + states[self.goals_c[ii][2]]['ground']
+                    states[self.goals_c[ii][2]]['ground'].extend([obj_cur]+states[obj_cur]['ground'])
+
+                    # change the subgoal
+                    subgoal_modified[2] = states[subgoal_modified[0]]['underground'][-1]
+                if self.goals_c[ii][3] != 'none':
+                    if states[obj_cur]['in'] !=[]: # if the object is already in something
+                        states[states[obj_cur]['in'][0]]['contains'].remove(obj_cur)
+                    states[obj_cur]['in'] = [self.goals_c[ii][3]]
+                    states[self.goals_c[ii][3]]['contains'].append(obj_cur) # put the object in the container
+
+
+                subgoals_new.append(subgoal_modified)
+
+            print('subgoal_simulator')
+            self.print_subgoal_list(subgoals_new)
+
+            # states to group
+            cook_set_contains={}
+            cook_set_on=[]
+            cook_set_vertex = []
+            for obj in states.keys():
+                if states[obj]['in'] !=[]:
+                    if states[obj]['in'][0] in cook_set_contains.keys():
+                        cook_set_contains[states[obj]['in'][0]].append(obj)
+                    else:
+                        cook_set_contains[states[obj]['in'][0]] = [obj]
+
+                if states[obj]['ground'] != [] or states[obj]['underground'] != []: 이건 어떻게 할까?
+                    for ii in len(cook_set_on):
+                        if obj in cook_set_on[ii]:
 
 
     def __csv2DF__(self,filepath):
@@ -156,21 +338,33 @@ class Subgoal():
                 subgoal_list.append([[subgoals.Object[ii], subgoals.State[ii], subgoals.Relation_on[ii], subgoals.Relation_in[ii]]])
         return subgoal_list
 
+    def print_subgoal_list(self,subgoal_list):
+        for l in subgoal_list:
+            print(l)
 
 
 if __name__ == '__main__':
 
-    filepath1='./infer/club_sandwich/club_sandwich_1800_real_number.csv'
-    filepath2='./infer/club_sandwich/club_sandwich_1800_predict.csv'
+    filepath1='./infer_1049/club_sandwich/club_sandwich_1800_real_number.csv'
+    file_info='./infer_1049/club_sandwich/club_sandwich_1800_info.txt'
+    filepath2='./infer_1049/club_sandwich/club_sandwich_1800_predict.csv'
+    gt_path = './infer_1049/club_sandwich/club_sandwich_1800_label.csv'
+    kb_path = KB_PATH='knowledge_base.yaml'
 
-    subgoal = Subgoal([filepath2])
-    subgoal.__csv2subgoals__(filepath1,5)
+    subgoal = Subgoal(filepath1,kb_path,5)
+    subgoal.__read_info__(file_info)
+    subgoal.filter_samegoals()
+    subgoal.__read_GT__(gt_path)
+    subgoal.subgoal_simulator()
+
+#    subgoal.__csv2subgoals__(filepath1,5)
     print("end")
 
     # 검증할 사항:
-    똑같은것,
-    ingredient있는가,
-    state transition
+    #똑같은것,
+    #ingredient있는가,
+    #state transition
+    #object 묶음 만들기
 
 
 

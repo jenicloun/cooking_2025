@@ -1,0 +1,1 @@
+Ingredients : ['anchovy', 'blender jar', 'lemon juice', 'canola oil', 'worcestershire sauce', 'garlic', 'relish', 'fish mixture', 'egg yolk', 'salad dressing', 'bowl', 'saran wrap', 'fridge', 'escarole', 'salad mix', 'caesar salad']

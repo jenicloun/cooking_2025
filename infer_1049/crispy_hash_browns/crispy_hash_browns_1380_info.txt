@@ -1,0 +1,1 @@
+Ingredients : ['canola oil', 'skillet', 'stove', 'dill', 'bowl', 'sea salt', 'potato', 'black pepper', 'flour', 'potato mixture', 'pan', 'hash brown', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

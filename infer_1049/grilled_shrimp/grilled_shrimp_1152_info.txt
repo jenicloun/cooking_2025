@@ -1,0 +1,1 @@
+Ingredients : ['anchovy', 'plate', 'sesame oil', 'garlic salt', 'arugula', 'ginger', 'black pepper', 'grill', 'grilled shrimp', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

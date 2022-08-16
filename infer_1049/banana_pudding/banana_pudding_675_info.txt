@@ -1,0 +1,1 @@
+Ingredients : ['bowl', 'mixer', 'cheese', 'whipped cream', 'vanilla extract', 'pudding mixture', 'banana pudding mix', 'condensed milk', 'milk', 'banana', 'cutting board', 'pudding', 'tray', 'vanilla wafer', 'banana pudding', '<PAD>']

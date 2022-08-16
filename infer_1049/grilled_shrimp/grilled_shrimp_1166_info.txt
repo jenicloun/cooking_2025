@@ -1,0 +1,1 @@
+Ingredients : ['anchovy', 'plate', 'black pepper', 'celery salt', 'cabbage', 'ginger', 'cooking spray', 'grill', 'grilled shrimp', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

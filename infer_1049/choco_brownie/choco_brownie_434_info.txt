@@ -1,0 +1,1 @@
+Ingredients : ['water', 'bowl', 'instant coffee', 'butter', 'coffee', 'egg white and yolk', 'batter', 'vinegar', 'flour mixture', 'egg mixture', 'brownie batter', 'baking tray', 'oven', 'brownie', '<PAD>', '<PAD>']

@@ -1,0 +1,1 @@
+Ingredients : ['pancake mix', 'bowl', 'sour cream', 'dill', 'butter', 'biscuit dough', 'sesame oil', 'pan', 'muffin pan', 'oven', 'biscuit', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

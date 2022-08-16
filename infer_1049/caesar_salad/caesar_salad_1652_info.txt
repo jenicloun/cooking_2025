@@ -1,0 +1,1 @@
+Ingredients : ['fish mixture', 'blender jar', 'lemon juice', 'egg yolk', 'worcestershire sauce', 'relish', 'salmon', 'garlic', 'sesame oil', 'salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'broccoli', 'caesar salad']

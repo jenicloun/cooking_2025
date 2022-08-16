@@ -1,0 +1,1 @@
+Ingredients : ['tuna', 'plate', 'ginger', 'sesame oil', 'arugula', 'black pepper', 'sea salt', 'grill', 'grilled shrimp', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

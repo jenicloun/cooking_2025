@@ -1,0 +1,1 @@
+Ingredients : ['olive oil', 'blender jar', 'mayonnaise', 'garlic', 'fish mixture', 'anchovy', 'worcestershire sauce', 'lemon juice', 'egg yolk', 'greek salad dressing', 'bowl', 'saran wrap', 'fridge', 'cabbage', 'salad mix', 'caesar salad']

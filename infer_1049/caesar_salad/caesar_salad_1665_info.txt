@@ -1,0 +1,1 @@
+Ingredients : ['garlic', 'blender jar', 'worcestershire sauce', 'fish mixture', 'grapeseed oil', 'mustard', 'lemon juice', 'egg yolk', 'salmon', 'greek salad dressing', 'bowl', 'saran wrap', 'fridge', 'celery', 'salad mix', 'caesar salad']

@@ -1,0 +1,1 @@
+Ingredients : ['hot sauce', 'blender jar', 'crayfish mixture', 'lemon juice', 'egg yolk', 'worcestershire sauce', 'garlic', 'fish mixture', 'cooking spray', 'salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'cabbage', 'caesar salad']

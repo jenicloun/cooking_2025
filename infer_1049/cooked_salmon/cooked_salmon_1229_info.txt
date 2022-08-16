@@ -1,0 +1,1 @@
+Ingredients : ['crayfish mixture', 'bowl', 'microwave', 'cutting board', 'black pepper', 'celery salt', 'olive oil', 'vegetable oil', 'ginger', 'oil mixture', 'pan', 'stove', 'cooked salmon', '<PAD>', '<PAD>', '<PAD>']

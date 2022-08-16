@@ -1,0 +1,1 @@
+Ingredients : ['tuna', 'blender jar', 'lemon juice', 'olive oil', 'worcestershire sauce', 'garlic', 'relish', 'fish mixture', 'egg yolk', 'salad dressing', 'bowl', 'saran wrap', 'fridge', 'arugula', 'salad mix', 'caesar salad']

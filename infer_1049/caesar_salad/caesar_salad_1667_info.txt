@@ -1,0 +1,1 @@
+Ingredients : ['crayfish mixture', 'blender jar', 'chili sauce', 'fish mixture', 'lemon juice', 'egg yolk', 'grapeseed oil', 'worcestershire sauce', 'garlic', 'salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'escarole', 'caesar salad']

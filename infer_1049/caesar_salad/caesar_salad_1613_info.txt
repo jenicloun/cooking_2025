@@ -1,0 +1,1 @@
+Ingredients : ['fish mixture', 'blender jar', 'garlic', 'worcestershire sauce', 'egg yolk', 'cooking spray', 'hot sauce', 'lemon juice', 'anchovy', 'greek salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'celery', 'caesar salad']

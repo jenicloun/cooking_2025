@@ -1,0 +1,1 @@
+Ingredients : ['salmon', 'bowl', 'microwave', 'cutting board', 'sea salt', 'vegetable oil', 'grapeseed oil', 'black pepper', 'ginger', 'oil mixture', 'pan', 'stove', 'cooked salmon', '<PAD>', '<PAD>', '<PAD>']

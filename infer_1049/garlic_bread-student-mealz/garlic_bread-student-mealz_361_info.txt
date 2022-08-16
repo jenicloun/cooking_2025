@@ -1,0 +1,1 @@
+Ingredients : ['matzo', 'cutting board', 'lemon grass', 'plate', 'garlic', 'garlic press', 'bowl', 'garlic salt', 'black pepper', 'butter', 'garlic butter', 'parchment paper', 'baking tray', 'oven', 'garlic bread', '<PAD>']

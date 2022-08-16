@@ -1,0 +1,1 @@
+Ingredients : ['crayfish mixture', 'plate', 'salt', 'black pepper', 'ginger', 'grapeseed oil', 'arugula', 'grill', 'grilled shrimp', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

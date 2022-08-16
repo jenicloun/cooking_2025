@@ -1,0 +1,1 @@
+Ingredients : ['basil', 'cutting board', 'bread', 'plate', 'garlic', 'garlic press', 'bowl', 'garlic butter', 'garlic salt', 'black pepper', 'parchment paper', 'baking tray', 'oven', 'garlic bread', '<PAD>', '<PAD>']

@@ -1,0 +1,1 @@
+Ingredients : ['cooking spray', 'skillet', 'stove', 'garlic salt', 'bowl', 'potato', 'cilantro', 'black pepper', 'flour', 'potato mixture', 'pan', 'hash brown', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

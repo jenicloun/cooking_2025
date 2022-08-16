@@ -1,0 +1,1 @@
+Ingredients : ['shrimp', 'blender jar', 'worcestershire sauce', 'fish mixture', 'egg yolk', 'relish', 'garlic', 'lemon juice', 'sesame oil', 'greek salad dressing', 'bowl', 'saran wrap', 'fridge', 'celery', 'salad mix', 'caesar salad']

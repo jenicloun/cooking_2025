@@ -1,0 +1,1 @@
+Ingredients : ['chili sauce', 'blender jar', 'fish mixture', 'cooking spray', 'garlic', 'worcestershire sauce', 'tuna', 'egg yolk', 'lemon juice', 'greek salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'escarole', 'caesar salad']

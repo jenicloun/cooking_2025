@@ -1,0 +1,1 @@
+Ingredients : ['tuna', 'blender jar', 'fish mixture', 'sesame oil', 'egg yolk', 'garlic', 'lemon juice', 'mayonnaise', 'worcestershire sauce', 'greek salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'cabbage', 'caesar salad']

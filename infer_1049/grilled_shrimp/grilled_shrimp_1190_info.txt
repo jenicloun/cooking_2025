@@ -1,0 +1,1 @@
+Ingredients : ['shrimp', 'plate', 'sea salt', 'celery', 'black pepper', 'olive oil', 'ginger', 'grill', 'grilled shrimp', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

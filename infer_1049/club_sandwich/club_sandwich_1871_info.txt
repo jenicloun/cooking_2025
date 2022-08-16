@@ -1,0 +1,1 @@
+Ingredients : ['cooking pan', 'stove', 'bacon', 'pan', 'plate', 'tomato', 'cutting board', 'cabbage', 'matzo', 'ham', 'turkey', 'cheddar', 'mayonnaise', 'club sandwich', '<PAD>', '<PAD>']

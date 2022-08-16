@@ -1,0 +1,1 @@
+Ingredients : ['sesame oil', 'blender jar', 'anchovy', 'fish mixture', 'hot sauce', 'lemon juice', 'egg yolk', 'garlic', 'worcestershire sauce', 'salad dressing', 'bowl', 'saran wrap', 'fridge', 'salad mix', 'celery', 'caesar salad']

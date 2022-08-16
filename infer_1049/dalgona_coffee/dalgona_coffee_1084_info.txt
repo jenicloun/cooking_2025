@@ -1,0 +1,1 @@
+Ingredients : ['instant coffee', 'mixing bowl', 'powdered sugar', 'water', 'coffee', 'drinking glass', 'milk', 'whipped coffee', 'water ice', 'dalgona coffee', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']

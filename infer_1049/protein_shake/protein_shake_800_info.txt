@@ -1,0 +1,1 @@
+Ingredients : ['flaxseed', 'blender cup', 'yogurt', 'strawberry', 'whey powder', 'sugar', 'milk', 'blender', 'protein shake', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>', '<PAD>']
