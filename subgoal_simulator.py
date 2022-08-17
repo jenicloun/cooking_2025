@@ -9,20 +9,25 @@ from os.path import dirname
 from collections import defaultdict
 import copy
 
+# TODO: 최초 initialize 와 exist 발생시 true를 none으로 바꾸는 과정, exist에 대한 state tracking도 필요
 def sigmoid(x):
     return 1 / (1 +np.exp(-x))
 
 
 class Subgoal():
-    def __init__(self,goal_path,kb_path,num_top): # filenames: list of filenames top1, top2, top3
+    def __init__(self,goal_path,kb_path,ing_map_path,num_top): # filenames: list of filenames top1, top2, top3
         self.goals_DF=[] # dataframe
         self.goals_list = []
         self.num_top = num_top
         self.__csv2subgoals__(goal_path,num_top)
-        self.new_obj_essential = {'club_sandwich': ['bread', 'bread_crumb'], 'tuna spread': ['tuna']}
 
         with open(kb_path) as f:  # Read knowledge base
             self.KB = yaml.load(f, Loader=yaml.FullLoader)
+
+        with open(ing_map_path) as f:
+            self.ing_map_key = yaml.load(f,Loader=yaml.FullLoader)
+
+        print("")
 
         # for ii in range(0,self.num_top):
         #     self.goals_DF.append(self.__csv2DF__(filenames[ii]))
@@ -172,18 +177,7 @@ class Subgoal():
                                                                      self.idx_goal_ranking[jj])
                         self.goals_c[jj] = copy.deepcopy(next_goal)
                         self.idx_goal_ranking[jj] = cur_rank
-                        # sample new one
-                        #
-                        # self.idx_goal_ranking[jj] = self.idx_goal_ranking[jj] + 1
-                        # while self.goals[jj]['object'][self.idx_goal_ranking[jj]] not in self.inputs\
-                        #         and self.idx_goal_ranking[jj]<self.num_top:
-                        #     self.idx_goal_ranking[jj] = self.idx_goal_ranking[jj] + 1
-                        #
-                        # if self.idx_goal_ranking[jj] == self.num_top:
-                        #     self.goal_c[jj][0]='skip'
-                        # else:
-                        #     self.goals_c[jj][0]=self.goals[jj]['object'][self.idx_goal_ranking[jj]]
-                        #     self.goals[jj]['goal']=self.goals_c[jj]
+
         # print
         for ii in range(0,len(self.goals_list)):
             print(ii,':',self.goals_list[ii], self.goals_c[ii])
@@ -215,10 +209,14 @@ class Subgoal():
         states = {}  # key: object, value: {state:[], in:[], ground:[], underground:[] } # underground - object - ground
         subgoals_new = []
         new_ing = {} # save the new ingredient
-
+        obj_none = [goals_list[ii][0] for ii in range(0,len(goals_list)) if goals_list[ii][1]=='exist']
         for obj in self.inputs:
             if obj != '<PAD>':
-                states[obj] = {'state': [], 'in': [],'contains': [], 'ground': [], 'underground': []}  # ingredient: one-to-one
+                if obj in obj_none: # ground는 현재 obj기준으로 위에 쌓여있는 물체 목록, 'under ground는 현재 obj기준으로 아래있는 물체 목록
+                    states[obj] = {'state': ['none'], 'in': [],'contains': [], 'ground': [], 'underground': []}  # ingredient: one-to-one
+                else:
+                    states[obj] = {'state': ['exist'], 'in': [], 'contains': [], 'ground': [],
+                                   'underground': []}  # ingredient: one-to-one
 
         for ii in range(0, len(goals_list)):
             flag_feasible = True
@@ -229,7 +227,7 @@ class Subgoal():
                 and goals_list[ii][3] == 'none':  # meaningless subgoal
                 flag_feasible = False
 
-            # check whether the state does not change
+            # check whether the state does not change (state가 변화하지않으면 무시)
             if flag_feasible:
                 obj_cur = goals_list[ii][0]
                 if (goals_list[ii][1] in states[obj_cur]['state']) and (
@@ -240,11 +238,41 @@ class Subgoal():
             if flag_feasible:  # add subgoals and track the history
                 subgoal_modified = copy.deepcopy(goals_list[ii])
 
-                if goals_list[ii][1] not in states[obj_cur]['state']: # check state
+                if goals_list[ii][1] != 'none' and goals_list[ii][1] not in states[obj_cur]['state']: # check state
                     states[obj_cur]['state'].append(goals_list[ii][1])
+                    if 'none' in states[obj_cur]['state']:
+                        states[obj_cur]['state'].remove('none')
 
                 if goals_list[ii][1] == 'exist':
-                    new_ing[obj_cur]=[]
+                    # 현재 상태에서 묶인 재료들을 구함
+                    cook_set_on, cook_set_contains = self.states2set(states_history[-1], visible=False)
+
+                    for cook_set in cook_set_on+list(cook_set_contains.values()):
+                        # 어느것이 exist를 구성하는 재료인지 파악
+                        flag, cook_set_new = self.check_ing_mapping(self.ing_map_key[obj_cur],cook_set)
+                        if flag:
+                            new_ing[obj_cur]=cook_set_new
+                            print('map:',obj_cur,cook_set_new)
+                            # update states
+                            # TODO: # replace all the object
+                            for key in states.keys():
+                                if key in cook_set_new:
+                                    states[key]= {'state': ['none'], 'in': [],'contains': [], 'ground': [], 'underground': []}
+                                else:
+                                    for key_check in ['ground','underground','contains']:
+                                        if set(cook_set_new).issubset(set(states[key][key_check])): # 재료 교체
+                                            new_context = []
+                                            for g in states[key][key_check]:
+                                                if g in cook_set_new:
+                                                    if obj_cur not in new_context:
+                                                        new_context.append(obj_cur)
+                                                else:
+                                                    new_context.append(g)
+                                            states[key][key_check]=copy.deepcopy(new_context)
+
+                            print("check")
+                        else:
+                            new_ing[obj_cur] = [obj_cur]
 
                 if goals_list[ii][2] != 'none':      # relation_on
                     #remove the previous underground
@@ -272,23 +300,17 @@ class Subgoal():
                     for obj2 in states[obj_cur]['underground']:
                         states[obj2]['ground'].remove(obj_cur)
 
-
                 states_history.append(copy.deepcopy(states))
                 subgoals_new.append(subgoal_modified)
-
-                # exist가 등장하면 새로운 obj로 교체.
-
-
-        #print('subgoal_simulator')
-        #self.print_subgoal_list(subgoals_new)
+                print(str(len(subgoals_new))+': ')
+                cook_set_on, cook_set_contains = self.states2set(states, visible=True)
 
         # states to group
-        cook_set_on, cook_set_contains = self.states2set(states)
+        cook_set_on, cook_set_contains = self.states2set(states,visible=True)
 
+        return subgoals_new, states_history, cook_set_on, cook_set_contains
 
-        return subgoals_new, cook_set_on, cook_set_contains
-
-    def states2set(self,states):
+    def states2set(self,states,visible=False):
         # states to group
         cook_set_contains = {}
         cook_set_on = []
@@ -302,20 +324,56 @@ class Subgoal():
 
             if states[obj]['ground'] != [] or states[obj]['underground'] != []:
                 flag_exist = False
-                for ii in range(0, len(cook_set_on)):
-                    if obj in cook_set_on[ii]:
-                        cook_set_on[ii] = list(
-                            set(cook_set_on[ii] + states[obj]['ground'] + states[obj]['underground']))
+                for jj in range(0, len(cook_set_on)):
+                    if obj in cook_set_on[jj]:
+                        cook_set_on[jj] = list(
+                            set(cook_set_on[jj] + states[obj]['ground'] + states[obj]['underground']))
                         flag_exist = True
                 if not flag_exist:
                     cook_set_on.append(states[obj]['ground'] + [obj] + states[obj]['underground'])
-
-        print('on: ', cook_set_on)
-        print('contains: ', cook_set_contains)
+        if visible:
+            print('on: ', cook_set_on)
+            print('contains: ', cook_set_contains)
         return cook_set_on, cook_set_contains
 
-    def state2subgoal_task(self, state_history, subgoals_new): # translate state in the format of the subgoal
-        state_history = []
+    def check_ing_mapping(self,ing_map, cook_set):
+        # check whether essential ingredient is included in a cook_set
+        cook_set_return = []
+        flag_return = False
+        for key_ing in ing_map:
+            cook_set_new = []
+            flag = False
+            for ing in cook_set:
+                if ing in self.KB.keys():
+                    if 'ingredient' in self.KB[ing]['isA']:
+                        cook_set_new.append(ing)
+                else:
+                    cook_set_new.append(ing)
+                if key_ing in ing:
+                    flag= True
+            if flag:
+                flag_return = True
+                cook_set_return = cook_set_new
+        return flag_return, cook_set_return
+
+
+    def states2subgoals(self, states_history): # translate state in the format of the subgoal
+        subgoals_task = []
+        for states in states_history:
+            subgoal = {}
+            for obj, s in states.items():
+                for ss in s['state']:
+                    if ss!='none':
+                        subgoal[ss+'_'+obj]=True
+                    else:
+                        subgoal['exist_'+obj]=False
+                if len(s['underground'])>0:
+                    subgoal[obj+'_is_on']=s['underground'][-1]
+                if len(s['in']) > 0:
+                    subgoal[obj+'_is_in']=s['in'][0]
+            subgoals_task.append(subgoal)
+        return subgoals_task
+
 
 
 
@@ -392,21 +450,23 @@ class Subgoal():
 
 if __name__ == '__main__':
 
-    path_common = './infer_1049/tuna_sandwich/tuna_sandwich_1900_'
+    path_common = './infer_1049/rosemary_biscuits/rosemary_biscuits_700_'
     filepath1=path_common+'real_number.csv'
     file_info=path_common+'info.txt'
     gt_path = path_common+'label.csv'
-    kb_path = KB_PATH='knowledge_base.yaml'
-
-    subgoal = Subgoal(filepath1,kb_path,5)
+    kb_path = 'knowledge_base.yaml'
+    ing_map_path = 'Ingredient_mapping.yaml'
+    subgoal = Subgoal(filepath1,kb_path,ing_map_path,5)
     subgoal.__read_info__(file_info)
     subgoal.filter_samegoals()
     print("GT")
     subgoal.__read_GT__(gt_path)
 
-    subgoal.subgoal_simulator(subgoal.goals_c)
-    subgoal.subgoal_simulator(subgoal.goal_gt)
+    subgoals_new, states_history, cook_set_on, cook_set_contains = subgoal.subgoal_simulator(subgoal.goals_c)
+    #subgoal.subgoal_simulator(subgoal.goal_gt)
 
+    subgoals_task = subgoal.states2subgoals(states_history)
+    print(subgoals_task)
 #    subgoal.__csv2subgoals__(filepath1,5)
     print("end")
 
