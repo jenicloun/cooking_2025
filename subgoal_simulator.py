@@ -19,6 +19,7 @@ class Subgoal():
         self.goals_list = []
         self.num_top = num_top
         self.__csv2subgoals__(goal_path,num_top)
+        self.new_obj_essential = {'club_sandwich': ['bread', 'bread_crumb'], 'tuna spread': ['tuna']}
 
         with open(kb_path) as f:  # Read knowledge base
             self.KB = yaml.load(f, Loader=yaml.FullLoader)
@@ -210,8 +211,11 @@ class Subgoal():
 
 
     def subgoal_simulator(self, goals_list):
+        states_history = []
         states = {}  # key: object, value: {state:[], in:[], ground:[], underground:[] } # underground - object - ground
         subgoals_new = []
+        new_ing = {} # save the new ingredient
+
         for obj in self.inputs:
             if obj != '<PAD>':
                 states[obj] = {'state': [], 'in': [],'contains': [], 'ground': [], 'underground': []}  # ingredient: one-to-one
@@ -238,6 +242,10 @@ class Subgoal():
 
                 if goals_list[ii][1] not in states[obj_cur]['state']: # check state
                     states[obj_cur]['state'].append(goals_list[ii][1])
+
+                if goals_list[ii][1] == 'exist':
+                    new_ing[obj_cur]=[]
+
                 if goals_list[ii][2] != 'none':      # relation_on
                     #remove the previous underground
                     for obj2 in states[obj_cur]['underground']:
@@ -254,6 +262,7 @@ class Subgoal():
 
                     # change the subgoal
                     subgoal_modified[2] = states[subgoal_modified[0]]['underground'][-1]
+
                 if goals_list[ii][3] != 'none': #relation_in
                     if states[obj_cur]['in'] !=[]: # if the object is already in something
                         states[states[obj_cur]['in'][0]]['contains'].remove(obj_cur)
@@ -264,17 +273,28 @@ class Subgoal():
                         states[obj2]['ground'].remove(obj_cur)
 
 
+                states_history.append(copy.deepcopy(states))
                 subgoals_new.append(subgoal_modified)
+
+                # exist가 등장하면 새로운 obj로 교체.
+
 
         #print('subgoal_simulator')
         #self.print_subgoal_list(subgoals_new)
 
         # states to group
-        cook_set_contains={}
-        cook_set_on=[]
-        cook_set_vertex = []
+        cook_set_on, cook_set_contains = self.states2set(states)
+
+
+        return subgoals_new, cook_set_on, cook_set_contains
+
+    def states2set(self,states):
+        # states to group
+        cook_set_contains = {}
+        cook_set_on = []
+        #cook_set_vertex = []
         for obj in states.keys():
-            if states[obj]['in'] !=[]:
+            if states[obj]['in'] != []:
                 if states[obj]['in'][0] in cook_set_contains.keys():
                     cook_set_contains[states[obj]['in'][0]].append(obj)
                 else:
@@ -282,16 +302,21 @@ class Subgoal():
 
             if states[obj]['ground'] != [] or states[obj]['underground'] != []:
                 flag_exist = False
-                for ii in range(0,len(cook_set_on)):
+                for ii in range(0, len(cook_set_on)):
                     if obj in cook_set_on[ii]:
-                        cook_set_on[ii] = list(set(cook_set_on[ii]+states[obj]['ground']+states[obj]['underground']))
+                        cook_set_on[ii] = list(
+                            set(cook_set_on[ii] + states[obj]['ground'] + states[obj]['underground']))
                         flag_exist = True
                 if not flag_exist:
-                    cook_set_on.append(states[obj]['ground']+[obj]+states[obj]['underground'])
+                    cook_set_on.append(states[obj]['ground'] + [obj] + states[obj]['underground'])
 
-        print('on: ',cook_set_on)
+        print('on: ', cook_set_on)
         print('contains: ', cook_set_contains)
-        return subgoals_new, cook_set_on, cook_set_contains
+        return cook_set_on, cook_set_contains
+
+    def state2subgoal_task(self, state_history, subgoals_new): # translate state in the format of the subgoal
+        state_history = []
+
 
 
     def __csv2DF__(self,filepath):
@@ -367,7 +392,7 @@ class Subgoal():
 
 if __name__ == '__main__':
 
-    path_common = './infer_1049/carrot_salad/carrot_salad_1503_'
+    path_common = './infer_1049/tuna_sandwich/tuna_sandwich_1900_'
     filepath1=path_common+'real_number.csv'
     file_info=path_common+'info.txt'
     gt_path = path_common+'label.csv'
