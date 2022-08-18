@@ -15,18 +15,22 @@ def sigmoid(x):
 
 
 class SubgoalSimulator():
-    def __init__(self,goal_path,file_info,kb_path,ing_map_path,tool_map_path,num_top): # filenames: list of filenames top1, top2, top3
+    def __init__(self,goal_path,file_info,kb_path,ing_map_path,tool_map_path,num_top,visible=True): # filenames: list of filenames top1, top2, top3
         self.goals_DF=[] # dataframe
         self.goals_list = [] # real_number.txt를 가공된 goal로 바꾸는건데
         self.num_top = num_top
         self.__read_info__(file_info)
+        self.visible = visible
 
         with open(kb_path) as f:  # Read knowledge base
             self.KB = yaml.load(f, Loader=yaml.FullLoader)
 
+        # ing_map_path: 요리의 아이덴티티가 되는 재료를 저장
+        # e.g. tuna sandwich: [tuna, bread] (요리 set중에 tuna나 bread를 가진 것을 샌드위치라 판단
         with open(ing_map_path) as f:
             self.ing_map_key = yaml.load(f,Loader=yaml.FullLoader)
 
+        # 없는 도구를 저절로 치환 e.g. muffin pan: pan => 레시피에 muffin map이 등장하면 pan으로 mapping
         with open(tool_map_path) as f:
             self.tool_map = yaml.load(f,Loader=yaml.FullLoader)
 
@@ -35,15 +39,16 @@ class SubgoalSimulator():
     def get_network_output(self):
         subgoal.filter_samegoals() # 같은 sample 삭제
         # state history를 뽑고, goal correction을 수행
-        subgoals_c, states_history_c, cook_set_on_c, cook_set_contains_c,new_ing_c = subgoal.subgoal_simulate(subgoal.goals_c)
+        sim_result = subgoal.subgoal_simulate(subgoal.goals_c)
 
         # history를 task planner가 쓸 수있는 형태로 변환
-        subgoals_task = subgoal.states2subgoals(states_history_c)
+        subgoals_task = subgoal.states2subgoals(sim_result['states'])
         print("subgoals for task planner")
         for task in subgoals_task:
             print(task)
 
         #extract subgoals_diff and using ingredients
+        subgoals_c = sim_result['subgoals']
         subgoals_diff = []
         using_ings = []
         ing_bottles = set()
@@ -67,14 +72,12 @@ class SubgoalSimulator():
                 if subgoals_c[ii][2] != 'bowl': # why?
                     ings.add(subgoals_c[ii][2])
 
-
-
             subgoals_diff.append(diff)
             using_ings.append([ings,{}])
         print(subgoals_diff)
         # add last ingredient of sandwich  는 뭐
         print("using_ings:",using_ings)
-        return subgoals_task, using_ings, new_ing_c,subgoals_diff
+        return subgoals_task, using_ings, sim_result['ing_map'],subgoals_diff
 
     def __read_info__(self,filename):
         with open(filename) as f:
@@ -193,8 +196,8 @@ class SubgoalSimulator():
                 self.goals.append(copy.deepcopy(subgoal_unit))
                 self.goals_list.append(copy.deepcopy(subgoal_unit['top1']))
 
-        print('subgoal- original')
-        self.print_subgoal_list(self.goals_list)
+        #print('subgoal- original')
+        #self.print_subgoal_list(self.goals_list)
 
     def filter_samegoals(self):
         self.goals_c=copy.deepcopy(self.goals_list)# corrected goals
@@ -323,7 +326,8 @@ class SubgoalSimulator():
                                         states[key]= {'state': ['none'], 'in': [],'contains': [], 'ground': [], 'underground': []}
                                     else:
                                         for key_check in ['ground','underground','contains']:
-                                            if set(cook_set_new).issubset(set(states[key][key_check])): # replace ingredients
+                                            #if set(cook_set_new).issubset(set(states[key][key_check])): # replace ingredients
+                                            if len(set(cook_set_new) & set(states[key][key_check]))>0:
                                                 new_context = []
                                                 for g in states[key][key_check]:
                                                     if g in cook_set_new:
@@ -366,24 +370,25 @@ class SubgoalSimulator():
                     # if the object is already on something
                     for obj2 in states[obj_cur]['underground']:
                         states[obj2]['ground'].remove(obj_cur)
+                    states[obj_cur]['underground']=[]
 
                 states_history.append(copy.deepcopy(states))
                 subgoals_new.append(subgoal_modified)
-
-                cook_set_on, cook_set_contains = self.states2set(states, visible=False)
-                print('cook set {}: '.format(ii), cook_set_on,cook_set_contains)
-
+                if self.visible:
+                    cook_set_on, cook_set_contains = self.states2set(states, visible=False)
+                    print('cook set {}: '.format(ii), cook_set_on,cook_set_contains)
 
         # states to group
         cook_set_on, cook_set_contains = self.states2set(states,visible=True)
-
-        return subgoals_new, states_history, cook_set_on, cook_set_contains, new_ing
+        sim_result = {'subgoals':subgoals_new, 'states':states_history,
+                      'set_on':cook_set_on, 'set_contains':cook_set_contains,
+                      'ing_map':new_ing}
+        return sim_result
 
     def states2set(self,states,visible=False): #현재 state를 grouping한다.
         # states to group
         cook_set_contains = {}
         cook_set_on = []
-        #cook_set_vertex = []
         for obj in states.keys():
             if states[obj]['in'] != []:
                 if states[obj]['in'][0] in cook_set_contains.keys():
@@ -400,6 +405,14 @@ class SubgoalSimulator():
                         flag_exist = True
                 if not flag_exist:
                     cook_set_on.append(states[obj]['ground'] + [obj] + states[obj]['underground'])
+
+        # cook_set_on과 cook_set_contains에 overlap이 있을 때 처리
+        for set_on in cook_set_on:
+            for key_container in cook_set_contains:
+                if len(set(set_on) & set(cook_set_contains[key_container]))>0:
+                    cook_set_contains[key_container] = list(set(set_on+ cook_set_contains[key_container]))
+
+                    cook_set_on.remove(set_on)
         if visible:
             print('on: ', cook_set_on)
             print('contains: ', cook_set_contains)
@@ -542,7 +555,7 @@ if __name__ == '__main__':
     # print:
     #subgoals_c, states_history_c, cook_set_on_c, cook_set_contains_c,new_ing_c = subgoal.subgoal_simulator(subgoal.goals_c)
     subgoal.__read_GT__(gt_path)
-    subgoals_gt, states_history_gt, cook_set_on_gt, cook_set_contains_gt,new_ing_gt = subgoal.subgoal_simulate(subgoal.goals_gt)
+    simresults_gt = subgoal.subgoal_simulate(subgoal.goals_gt)
 
 
     #subgoals_task = subgoal.states2subgoals(states_history_c)
