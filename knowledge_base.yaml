@@ -516,7 +516,7 @@ stove:
   isA: ['place']
   HasProperty: []
 
-cutting_board:
+cutting board:
   isA: ['place']
   HasProperty: []
 

@@ -1,5 +1,5 @@
 # !/usr/bin/env python
-
+#-*-coding:utf-8-*-#
 import csv
 import copy
 import pandas as pd
@@ -15,17 +15,45 @@ def sigmoid(x):
 
 
 class Subgoal():
-    def __init__(self,goal_path,kb_path,ing_map_path,num_top): # filenames: list of filenames top1, top2, top3
+    def __init__(self,goal_path,file_info,kb_path,ing_map_path,tool_map_path,num_top): # filenames: list of filenames top1, top2, top3
         self.goals_DF=[] # dataframe
-        self.goals_list = []
+        self.goals_list = [] # real_number.txt를 가공된 goal로 바꾸는건데
         self.num_top = num_top
-        self.__csv2subgoals__(goal_path,num_top)
+        self.__read_info__(file_info)
 
         with open(kb_path) as f:  # Read knowledge base
             self.KB = yaml.load(f, Loader=yaml.FullLoader)
 
         with open(ing_map_path) as f:
             self.ing_map_key = yaml.load(f,Loader=yaml.FullLoader)
+
+        with open(tool_map_path) as f:
+            self.tool_map = yaml.load(f,Loader=yaml.FullLoader)
+
+        self.__csv2subgoals__(goal_path,num_top) #self.goals_list만듦
+
+    def get_network_output(self):
+        subgoal.filter_samegoals() # 같은 sample 삭제
+        # state history를 뽑고, goal correction을 수행
+        subgoals_c, states_history_c, cook_set_on_c, cook_set_contains_c,new_ing_c = subgoal.subgoal_simulator(subgoal.goals_c)
+
+        # history를 task planner가 쓸 수있는 형태로 변환
+        subgoals_task = subgoal.states2subgoals(states_history_c)
+        print("subgoals for task planner")
+        for task in subgoals_task:
+            print(task)
+        subgoals_diff = []
+        for ii in range(0, len(subgoals_c)):
+            diff= {}
+            if subgoals_c[ii][1] != 'none':
+                diff['{}_{}'.format(subgoals_c[ii][1],subgoals_c[ii][0])]=True
+            if subgoals_c[ii][2] != 'none':
+                diff['{}_is_on'.format(subgoals_c[ii][0])]=subgoals_c[ii][2]
+            if subgoals_c[ii][3] != 'none':
+                diff['{}_is_in'.format(subgoals_c[ii][0])]=subgoals_c[ii][3]
+            subgoals_diff.append(diff)
+        print(subgoals_diff)
+        return subgoals_task, self.inputs, new_ing_c,subgoals_diff
 
     def __read_info__(self,filename):
         with open(filename) as f:
@@ -36,7 +64,7 @@ class Subgoal():
     def __read_GT__(self,filepath):
         df = pd.read_csv(filepath)
         len_gt = len(df.columns)
-        self.goal_gt = []
+        self.goals_gt = []
         state_list = ['chopped','cooked','diced','exist','fried','peeled','sliced','none']
         for ii in range(0, df.values.shape[0]):
             states=[]
@@ -44,10 +72,10 @@ class Subgoal():
                 if df.values[ii,jj] == 1:
                     states.append(state_list[jj-2])
 
-            self.goal_gt.append([self.obj_list[int(df.values[ii,1])],states,self.obj_list[int(df.values[ii,10])],
+            self.goals_gt.append([self.obj_list[int(df.values[ii,1])],states,self.obj_list[int(df.values[ii,10])],
                                  self.obj_list[int(df.values[ii,11])]])
         print("GT")
-        self.print_subgoal_list(self.goal_gt)
+        self.print_subgoal_list(self.goals_gt)
 
 
     def __csv2subgoals__(self,filepath, num_top): # extract subgoals from csv
@@ -62,11 +90,11 @@ class Subgoal():
         relation_in_list  = []
         relation_in_range = [len_dfc,0]
 
-        # find names of data
+        # find names of data - csv를 읽기위한 준비
         for ii in range(0, len(df.columns)):
             split_text = df.columns[ii].split('_')
             if split_text[0] == 'Object':
-                obj_range[0] = min(obj_range[0], ii)
+                obj_range[0] = min(obj_range[0], ii) #column에서 몇번째 column이 obj에 해당되는건
                 obj_range[1] = max(obj_range[1], ii)
                 obj_list.append(split_text[2])
             elif split_text[0] == 'State':
@@ -82,16 +110,28 @@ class Subgoal():
                 relation_in_range[1] = max(relation_in_range[1], ii)
                 relation_in_list.append(split_text[3])
 
+        # tool mapping
+        for tool in self.tool_map.keys():
+            idx = obj_list.index(tool)
+            obj_list[idx]=self.tool_map[tool]
+
+            idx = relation_on_list.index(tool)
+            relation_on_list[idx]=self.tool_map[tool]
+
+            idx = relation_in_list.index(tool)
+            relation_in_list[idx]=self.tool_map[tool]
+
         self.obj_list = obj_list
+
         # find num_top data
-        self.goals=[]
-        self.goals_list = []
+        self.goals=[] # dictionary형태로 정보가 많고
+        self.goals_list = [] #list형태로 만들어진 goal
         for ii in range(0,df.values.shape[0]):
             # object
             val_sigmoid = sigmoid(df.values[ii,obj_range[0]:obj_range[1]+1])
             idx_sorted = np.argsort(val_sigmoid)
-            objs = [obj_list[idx_sorted[-1-jj]] for jj in range(0,num_top)]
-            objs_val=[val_sigmoid[idx_sorted[-1-jj]] for jj in range(0,num_top)]
+            objs = [obj_list[idx_sorted[-1-jj]] for jj in range(0,num_top)] #5개 object이름
+            objs_val=[val_sigmoid[idx_sorted[-1-jj]] for jj in range(0,num_top)] # val_sigmoid값 5개 confidence를 결정
 
             # state
             th_state = 0.3
@@ -126,7 +166,7 @@ class Subgoal():
                 subgoal_unit = {'object':objs, 'object_val':objs_val,'state':states,
                                 'relation_on':copy.deepcopy(relation_on), 'relation_in':copy.deepcopy(relation_in),
                                 'top1':[objs[0],states[0],relation_on[0],relation_in[0]],
-                                'goal':[objs[0],states[0],relation_on[0],relation_in[0]]}
+                                'goal':[objs[0],states[0],relation_on[0],relation_in[0]]} #goal은 없어도 될듯
                 #print(subgoal_unit['top1'])
                 #print('goal:', self.goals_list[ii])
 
@@ -144,21 +184,21 @@ class Subgoal():
             for ii in range(0,len(self.goals_c)):
                 # remove nonexist objects
 
-                if self.goals_c[ii][0] not in self.inputs:
+                if self.goals_c[ii][0] not in self.inputs: #없는 object가 등장한 경우
                     next_goal, cur_rank = self.sample_valid_goal(self.goals[ii], self.goals_c[ii], self.idx_goal_ranking[ii])
                     self.goals_c[ii] = copy.deepcopy(next_goal)
                     self.idx_goal_ranking[ii] = cur_rank
-
-                if self.goals_c[ii][2] not in self.obj_list\
-                    or self.goals_c[ii][3] not in self.obj_list:
+                # TODO: e
+                if self.goals_c[ii][2] not in self.inputs+['none']\
+                    or self.goals_c[ii][3] not in self.inputs+['none']:
                     self.goals_c[ii][0]='skip'
 
                 # Change subgoals if there are multiple same goals
                 num_same = self.goals_c.count(self.goals_c[ii])
                 if num_same >1 and self.goals_c[ii][0] !='skip':
                     # find all indices
-                    same_idxs = []
-                    probs = []
+                    same_idxs = [] #몇번째 task가 겹치는지 index를 뽑고
+                    probs = [] # 각 subgoal의 confidence
                     for jj in range(0,len(self.goals_c)):
                         if self.goals_c[ii] == self.goals_c[jj]:
                             same_idxs.append(jj)
@@ -204,7 +244,8 @@ class Subgoal():
         states_history = []
         states = {}  # key: object, value: {state:[], in:[], ground:[], underground:[] } # underground - object - ground
         subgoals_new = []
-        new_ing = {} # save the new ingredient
+        new_ing = {} # save the new ingredient:e.g. {sandwich: [ham, bread, ...], }
+        # obj_none: 처음에 없는데 등장할 재료
         obj_none = [goals_list[ii][0] for ii in range(0,len(goals_list)) if goals_list[ii][1]=='exist']
         for obj in self.inputs:
             if obj != '<PAD>':
@@ -243,14 +284,16 @@ class Subgoal():
 
                     if ii ==0:
                         new_ing[obj_cur]=[obj_cur]
+                        print('map:',obj_cur,cook_set_new)
                         states[obj_cur]['state']=['exist']
                     else:
                         cook_set_on, cook_set_contains = self.states2set(states_history[-1], visible=False)
-
+                        flag_total = False
                         for cook_set in cook_set_on+list(cook_set_contains.values()):
 
                             flag, cook_set_new = self.check_ing_mapping(self.ing_map_key[obj_cur],cook_set)
                             if flag:
+                                flag_total = flag
                                 new_ing[obj_cur]=copy.deepcopy(cook_set_new)
                                 print('map:',obj_cur,cook_set_new)
                                 # update states
@@ -272,10 +315,11 @@ class Subgoal():
                                                 if key_check == 'contains':
                                                     states[obj_cur]['in']=[key]
 
-                            else:
-                                new_ing[obj_cur] = [obj_cur]
-                                #states[obj_cur]['state'].remove('none')
-                                states[obj_cur]['state']=['exist']
+                        if not flag_total:
+                            new_ing[obj_cur] = [obj_cur]
+                            print('map_else:',obj_cur,cook_set_new)
+                            #states[obj_cur]['state'].remove('none')
+                            states[obj_cur]['state']=['exist']
 
                 if goals_list[ii][2] != 'none':      # relation_on
                     #remove the previous underground
@@ -313,9 +357,9 @@ class Subgoal():
         # states to group
         cook_set_on, cook_set_contains = self.states2set(states,visible=True)
 
-        return subgoals_new, states_history, cook_set_on, cook_set_contains
+        return subgoals_new, states_history, cook_set_on, cook_set_contains, new_ing
 
-    def states2set(self,states,visible=False):
+    def states2set(self,states,visible=False): #현재 state를 grouping한다.
         # states to group
         cook_set_contains = {}
         cook_set_on = []
@@ -363,21 +407,27 @@ class Subgoal():
 
 
     def states2subgoals(self, states_history): # translate state in the format of the subgoal
+        #Todo:Tool, exist 무시
         subgoals_task = []
-        for states in states_history:
+        for ii in range(0,len(states_history)):
+            states = states_history[ii]
             subgoal = {}
             for obj, s in states.items():
-                for ss in s['state']:
-                    if ss!='none':
-                        subgoal[ss+'_'+obj]=True
-                    else:
-                        subgoal['exist_'+obj]=False
+                if 'ingredient' not in ['ingredient']: #TODO: knowledge base 만들어진 이후 교체 self.KB[obj]:
+                    for ss in s['state']:
+                        if ss!='none':
+                            subgoal[ss+'_'+obj]=True
+                        else:
+                            subgoal['exist_'+obj]=False
                 if len(s['underground'])>0:
                     subgoal[obj+'_is_on']=s['underground'][-1]
                 if len(s['in']) > 0:
                     subgoal[obj+'_is_in']=s['in'][0]
             subgoals_task.append(subgoal)
         return subgoals_task
+
+    def goallist2goaldiff(self,goal_list):
+        print(goal_list)
 
 
 
@@ -455,24 +505,30 @@ class Subgoal():
 
 if __name__ == '__main__':
 
-    path_common = './infer_1049/rosemary_biscuits/rosemary_biscuits_700_'
-    filepath1=path_common+'real_number.csv'
+    path_common = './infer_1049/club_sandwich/club_sandwich_1800_'
+    real_number_path=path_common+'real_number.csv'
     file_info=path_common+'info.txt'
     gt_path = path_common+'label.csv'
     kb_path = 'knowledge_base.yaml'
     ing_map_path = 'Ingredient_mapping.yaml'
-    subgoal = Subgoal(filepath1,kb_path,ing_map_path,5)
-    subgoal.__read_info__(file_info)
-    subgoal.filter_samegoals()
-    print("GT")
+    tool_map_path = 'tool_mapping.yaml'
+    subgoal = Subgoal(real_number_path,file_info,kb_path,ing_map_path,tool_map_path,5)
+    goals, using_ings, new_objs, goal_diffs = subgoal.get_network_output()
+
+    #subgoal.filter_samegoals()
+    #print("GT")
     subgoal.__read_GT__(gt_path)
 
-    subgoals_new, states_history, cook_set_on, cook_set_contains = subgoal.subgoal_simulator(subgoal.goals_c)
-    #subgoal.subgoal_simulator(subgoal.goal_gt)
+    # print:
+    #subgoals_c, states_history_c, cook_set_on_c, cook_set_contains_c,new_ing_c = subgoal.subgoal_simulator(subgoal.goals_c)
+    subgoal.__read_GT__(gt_path)
+    subgoals_gt, states_history_gt, cook_set_on_gt, cook_set_contains_gt,new_ing_gt = subgoal.subgoal_simulator(subgoal.goals_gt)
 
-    subgoals_task = subgoal.states2subgoals(states_history)
-    for task in subgoals_task:
-        print(task)
+
+    #subgoals_task = subgoal.states2subgoals(states_history_c)
+    #print("subgoals for task planner")
+    #for task in subgoals_task:
+    #    print(task)
 #    subgoal.__csv2subgoals__(filepath1,5)
     print("end")
 
