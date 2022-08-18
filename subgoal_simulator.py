@@ -46,9 +46,13 @@ class Subgoal():
         #extract subgoals_diff and using ingredients
         subgoals_diff = []
         using_ings = []
+        ing_bottles = set()
+        for ing_i in self.inputs:
+            if '{}_bottle'.format(ing_i) in self.KB.keys():
+                ing_bottles.add(ing_i)
         for ii in range(0, len(subgoals_c)):
             diff= {}
-            ings= set()
+            ings= copy.deepcopy(ing_bottles)
             if subgoals_c[ii][1] != 'none':
                 diff['{}_{}'.format(subgoals_c[ii][1],subgoals_c[ii][0])]=True
                 ings.add(subgoals_c[ii][0])
@@ -63,9 +67,7 @@ class Subgoal():
                 if subgoals_c[ii][2] != 'bowl': # why?
                     ings.add(subgoals_c[ii][2])
 
-            for ing_i in list(ings):
-                if '{}_bottle'.format(ing_i) in self.KB.keys():
-                    ings.add('{}_bottle'.format(ing_i))
+
 
             subgoals_diff.append(diff)
             using_ings.append([ings,{}])
