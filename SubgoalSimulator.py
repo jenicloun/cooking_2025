@@ -13,6 +13,18 @@ import copy
 def sigmoid(x):
     return 1 / (1 +np.exp(-x))
 
+def intersection(A,B): # return intersection
+
+    if isinstance(A,list) & isinstance(B,list):
+        C = list(set(A)&set(B))
+        return C
+    elif isinstance(A,set) & isinstance(B,set):
+        C = A&B
+        return C
+    else:
+        print("function intersection: type error!")
+        return False
+
 
 class SubgoalSimulator():
     def __init__(self,goal_path,file_info,kb_path,ing_map_path,tool_map_path,num_top,visible=True): # filenames: list of filenames top1, top2, top3
@@ -83,7 +95,7 @@ class SubgoalSimulator():
         with open(filename) as f:
             line=f.readlines()
         ing_list = line[0][15:-1].split(', ')
-        self.inputs = [w[1:-1] for w in ing_list]
+        self.inputs = [w[1:-1].replace(' ','_') for w in ing_list]
 
     def __read_GT__(self,filepath):
         df = pd.read_csv(filepath)
@@ -119,7 +131,7 @@ class SubgoalSimulator():
             if split_text[0] == 'Object':
                 obj_range[0] = min(obj_range[0], ii) #column에서 몇번째 column이 obj에 해당되는건
                 obj_range[1] = max(obj_range[1], ii)
-                obj_list.append(split_text[2])
+                obj_list.append(split_text[2].replace(' ','_'))
             elif split_text[0] == 'State':
                 state_range[0] = min(state_range[0], ii)
                 state_range[1] = max(state_range[1], ii)
@@ -127,11 +139,11 @@ class SubgoalSimulator():
             elif split_text[0] == 'Relation' and split_text[1] == 'on':
                 relation_on_range[0] = min(relation_on_range[0], ii)
                 relation_on_range[1] = max(relation_on_range[1], ii)
-                relation_on_list.append(split_text[3])
+                relation_on_list.append(split_text[3].replace(' ','_'))
             elif split_text[0] == 'Relation' and split_text[1] == 'in':
                 relation_in_range[0] = min(relation_in_range[0], ii)
                 relation_in_range[1] = max(relation_in_range[1], ii)
-                relation_in_list.append(split_text[3])
+                relation_in_list.append(split_text[3].replace(' ','_'))
 
         # tool mapping
         for tool in self.tool_map.keys():
@@ -228,7 +240,7 @@ class SubgoalSimulator():
                             probs.append(self.goals[jj]['object_val'][self.idx_goal_ranking[jj]])
 
                     # change subgoals- try top (n+1)
-                    idx_argsort = np.flip(np.argsort(probs))
+                    idx_argsort = np.flip(np.argsort(probs),axis=0)
                     for kk in idx_argsort[1:]:
                         jj = same_idxs[kk]
                         next_goal, cur_rank = self.sample_valid_goal(self.goals[jj], self.goals_c[jj],
@@ -310,9 +322,9 @@ class SubgoalSimulator():
                         print('map:',obj_cur,cook_set_new)
                         states[obj_cur]['state']=['exist']
                     else:
-                        cook_set_on, cook_set_contains = self.states2set(states_history[-1], visible=False)
+                        cook_set_on, cook_set_contains, cook_set_ing = self.states2set(states_history[-1], visible=False)
                         flag_total = False
-                        for cook_set in cook_set_on+list(cook_set_contains.values()):
+                        for cook_set in cook_set_ing:
 
                             flag, cook_set_new = self.check_ing_mapping(self.ing_map_key[obj_cur],cook_set)
                             if flag:
@@ -347,14 +359,19 @@ class SubgoalSimulator():
 
                 if goals_list[ii][2] != 'none':      # relation_on
                     #remove the previous underground
+                    # obj_cur아래 있던물건들의 ground에서 obj_cur을 제거
                     for obj2 in states[obj_cur]['underground']:
                         states[obj2]['ground'].remove(obj_cur)
+                    # obj_cur의 underground는 새로 옮겨간 물체의 underground, 옮겨간 물체, ground이다.
                     states[obj_cur]['underground'] = states[goals_list[ii][2]]['underground'] + [goals_list[ii][2]] \
                                                      + states[goals_list[ii][2]]['ground']
+                    #obj_cur의 [underground, obj_cur, ground]를 저장
                     new_set = copy.deepcopy(states[obj_cur]['underground']+[obj_cur]+states[obj_cur]['ground'])
+                    # new_set안에 있는 ground와 underground정보는 sync가 맞아야한다.
                     for jj in range(0,len(new_set)): # sync, underground, ground
                         states[new_set[jj]]['ground']=copy.deepcopy(new_set[jj+1:])
                         states[new_set[jj]]['underground']=copy.deepcopy(new_set[0:jj])
+                    # 현재 물체가 어떤 'in'에 있었으면 그 정보를 지운다.
                     if states[obj_cur]['in'] != []: # the object is not in [?] anymore
                         states[states[obj_cur]['in'][0]]['contains'].remove(obj_cur)
                         states[obj_cur]['in']=[]
@@ -364,24 +381,32 @@ class SubgoalSimulator():
 
                 if goals_list[ii][3] != 'none': #relation_in
                     if states[obj_cur]['in'] !=[]: # if the object is already in something
-                        states[states[obj_cur]['in'][0]]['contains'].remove(obj_cur)
-                    states[obj_cur]['in'] = [goals_list[ii][3]]
-                    states[goals_list[ii][3]]['contains'].extend([obj_cur]+states[obj_cur]['ground']) # put the object in the container
-                    # if the object is already on something
+                        states[states[obj_cur]['in'][0]]['contains'].remove(obj_cur) # obj_cur를 갖고있던 모든 물체의 contain을제거
+                        # obj_cur 아래 있던 물건들의 ground정보를 지운다. if the object is already on something
                     for obj2 in states[obj_cur]['underground']:
                         states[obj2]['ground'].remove(obj_cur)
-                    states[obj_cur]['underground']=[]
+                    states[obj_cur]['underground'] = []
+
+                    states[obj_cur]['in'] = [goals_list[ii][3]] # in 정보 update
+                    # 새로 obj_cur을 담은 container는 그 ground 물체까지 다 담는다.
+                    states[goals_list[ii][3]]['contains'].extend([obj_cur]+states[obj_cur]['ground']) # put the object in the container
+                    # obj_cur의 ground에 있던 물체의 in도 obj_cur의 in과 같게 바뀐다.
+                    for obj2 in states[obj_cur]['ground']:
+                        states[obj2]['in']=[goals_list[ii][3]]
+
 
                 states_history.append(copy.deepcopy(states))
                 subgoals_new.append(subgoal_modified)
                 if self.visible:
-                    cook_set_on, cook_set_contains = self.states2set(states, visible=False)
+                    cook_set_on, cook_set_contains, cook_set_ing = self.states2set(states, visible=False)
                     print('cook set {}: '.format(ii), cook_set_on,cook_set_contains)
+                    print('Ingredient set {}: '.format(ii),cook_set_ing)
 
         # states to group
-        cook_set_on, cook_set_contains = self.states2set(states,visible=True)
+        cook_set_on, cook_set_contains, cook_set_ing = self.states2set(states,visible=True)
         sim_result = {'subgoals':subgoals_new, 'states':states_history,
                       'set_on':cook_set_on, 'set_contains':cook_set_contains,
+                      'set_ing':cook_set_ing,
                       'ing_map':new_ing}
         return sim_result
 
@@ -405,37 +430,53 @@ class SubgoalSimulator():
                         flag_exist = True
                 if not flag_exist:
                     cook_set_on.append(states[obj]['ground'] + [obj] + states[obj]['underground'])
-
-        # cook_set_on과 cook_set_contains에 overlap이 있을 때 처리
+        # cook_set_ing는 cook_set_contains와 cook_set_on다 비교해서 연결된 것들을 set으로 처리한다.
+        # ingredient만 포함된 set을 추출
+        cook_set_tmp = []
         for set_on in cook_set_on:
-            for key_container in cook_set_contains:
-                if len(set(set_on) & set(cook_set_contains[key_container]))>0:
-                    cook_set_contains[key_container] = list(set(set_on+ cook_set_contains[key_container]))
+            cook_set_tmp.append([ing for ing in set_on if 'ingredient' in self.KB[ing]['isA']])
+        for set_contains in cook_set_contains.values():
+            cook_set_tmp.append([ing for ing in set_contains if 'ingredient' in self.KB[ing]['isA']])
+        # Merge: overlap이 있는 것끼리 한 set으로 합친다.
+        cook_set_ing = [cook_set_tmp[0]]
+        for ii in range(1, len(cook_set_tmp)):
+            for jj in range(0,len(cook_set_ing)):
+                intersection_set = intersection(cook_set_tmp[ii], cook_set_ing[jj])
+                # 겹치면 합친다.
+                if len(intersection_set)>0 and intersection_set != False:
+                    cook_set_ing[jj] = list(set(cook_set_tmp[ii] + cook_set_ing[jj]))
+                elif cook_set_tmp[ii]!=[]:
+                    cook_set_ing.append(cook_set_tmp[ii]) # 겹치는게 없으면 추가
+        if [] in cook_set_ing:
+            cook_set_ing.remove([])
 
-                    cook_set_on.remove(set_on)
         if visible:
             print('on: ', cook_set_on)
             print('contains: ', cook_set_contains)
-        return cook_set_on, cook_set_contains
+            print('Ingredient set: ',cook_set_ing)
+        return cook_set_on, cook_set_contains, cook_set_ing
 
     def check_ing_mapping(self,ing_map, cook_set):
         # check whether essential ingredient is included in a cook_set
         cook_set_return = []
         flag_return = False
         for key_ing in ing_map:
-            cook_set_new = []
-            flag = False
-            for ing in cook_set:
-                if ing in self.KB.keys():
-                    if 'ingredient' in self.KB[ing]['isA']:
-                        cook_set_new.append(ing)
-                else:
-                    cook_set_new.append(ing)
-                if key_ing in ing:
-                    flag= True
-            if flag:
+            if len([1 for ing in cook_set if key_ing in ing])>0:
+                cook_set_return = cook_set
                 flag_return = True
-                cook_set_return = cook_set_new
+            # cook_set_new = []
+            # flag = False
+            # for ing in cook_set:
+            #     if ing in self.KB.keys():
+            #         if 'ingredient' in self.KB[ing]['isA']:
+            #             cook_set_new.append(ing)
+            #     else:
+            #         cook_set_new.append(ing)
+            #     if key_ing in ing:
+            #         flag= True
+            # if flag:
+            #     flag_return = True
+            #     cook_set_return = cook_set_new
         return flag_return, cook_set_return
 
 
@@ -542,7 +583,7 @@ if __name__ == '__main__':
     real_number_path=path_common+'real_number.csv'
     file_info=path_common+'info.txt'
     gt_path = path_common+'label.csv'
-    kb_path = 'knowledge_base.yaml'
+    kb_path = './yaml/total.yaml'
     ing_map_path = 'Ingredient_mapping.yaml'
     tool_map_path = 'tool_mapping.yaml'
     subgoal = SubgoalSimulator(real_number_path,file_info,kb_path,ing_map_path,tool_map_path,5)

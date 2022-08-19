@@ -1,0 +1,418 @@
+bloody_mary_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - bloody_mary
+  isA:
+  - ing_bottle
+brown_sugar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - brown_sugar
+  isA:
+  - ing_bottle
+canola_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - canola_oil
+  isA:
+  - ing_bottle
+celery_salt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - celery_salt
+  isA:
+  - ing_bottle
+cheese_sauce_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - cheese_sauce
+  isA:
+  - ing_bottle
+coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - coffee
+  isA:
+  - ing_bottle
+condensed_milk_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - condensed_milk
+  isA:
+  - ing_bottle
+cream_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - cream
+  isA:
+  - ing_bottle
+dalgona_coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - dalgona_coffee
+  isA:
+  - ing_bottle
+flaxseed_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - flaxseed
+  isA:
+  - ing_bottle
+flour_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - flour
+  isA:
+  - ing_bottle
+garlic_salt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - garlic_salt
+  isA:
+  - ing_bottle
+grapeseed_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - grapeseed_oil
+  isA:
+  - ing_bottle
+greek_salad_dressing_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - greek_salad_dressing
+  isA:
+  - ing_bottle
+heavy_cream_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - heavy_cream
+  isA:
+  - ing_bottle
+instant_coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - instant_coffee
+  isA:
+  - ing_bottle
+milk_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - milk
+  isA:
+  - ing_bottle
+oil_mixture_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - oil_mixture
+  isA:
+  - ing_bottle
+pancake_mix_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - pancake_mix
+  isA:
+  - ing_bottle
+pasta_mix_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - pasta_mix
+  isA:
+  - ing_bottle
+powdered_sugar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - powdered_sugar
+  isA:
+  - ing_bottle
+protein_shake_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - protein_shake
+  isA:
+  - ing_bottle
+refined_sugar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - refined_sugar
+  isA:
+  - ing_bottle
+salad_dressing_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - salad_dressing
+  isA:
+  - ing_bottle
+sea_salt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - sea_salt
+  isA:
+  - ing_bottle
+sesame_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - sesame_oil
+  isA:
+  - ing_bottle
+sweetener_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - sweetener
+  isA:
+  - ing_bottle
+tobasco_sauce_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - tobasco_sauce
+  isA:
+  - ing_bottle
+tomato_juice_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - tomato_juice
+  isA:
+  - ing_bottle
+vanilla_extract_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vanilla_extract
+  isA:
+  - ing_bottle
+vegetable_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vegetable_oil
+  isA:
+  - ing_bottle
+vinegar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vinegar
+  isA:
+  - ing_bottle
+vodka_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vodka
+  isA:
+  - ing_bottle
+water_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - water
+  isA:
+  - ing_bottle
+whey_powder_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - whey_powder
+  isA:
+  - ing_bottle
+whipped_coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - whipped_coffee
+  isA:
+  - ing_bottle
+worcestershire_sauce_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - worcestershire_sauce
+  isA:
+  - ing_bottle
+yogurt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - yogurt
+  isA:
+  - ing_bottle

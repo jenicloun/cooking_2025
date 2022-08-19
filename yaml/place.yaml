@@ -1,0 +1,44 @@
+aluminium_foil:
+  HasProperty: []
+  isA:
+  - place
+cutting_board:
+  HasProperty: []
+  isA:
+  - place
+fridge:
+  HasProperty: []
+  isA:
+  - place
+grill:
+  HasProperty: []
+  isA:
+  - place
+microwave:
+  HasProperty: []
+  isA:
+  - place
+near_cutting_board:
+  HasProperty: []
+  isA:
+  - place
+oven:
+  HasProperty: []
+  isA:
+  - place
+parchment_paper:
+  HasProperty: []
+  isA:
+  - place
+saran_wrap:
+  HasProperty: []
+  isA:
+  - place
+stove:
+  HasProperty: []
+  isA:
+  - place
+table:
+  HasProperty: []
+  isA:
+  - place

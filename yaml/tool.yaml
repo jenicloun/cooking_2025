@@ -1,0 +1,51 @@
+blender:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool
+cooking_spray:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - cook
+  - spread
+  isA:
+  - tool
+food_processor:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool
+garlic_press:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool
+mixer:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool

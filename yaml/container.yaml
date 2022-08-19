@@ -1,0 +1,176 @@
+baking_tray:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+
+blender_cup:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+blender_jar:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+bowl:
+  AtLocation:
+  - near_cutting_board
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+cooking_pan:
+  AtLocation:
+  - table
+  - stove
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - cookware
+  - container
+
+drinking_glass:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+food_processor_bowl:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+highball_glass:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+jar:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+mixing_bowl:
+  AtLocation:
+  - near_cutting_board
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+muffin_pan:
+  AtLocation:
+  - stove
+  - oven
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - cookware
+  
+pan:
+  AtLocation:
+  - stove
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - cookware
+
+plate:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+pot:
+  AtLocation:
+  - cookware
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+salad_bowl:
+  AtLocation:
+  - table
+  - near_cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+skillet:
+  AtLocation:
+  - table
+  - stove
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - cookware
+
+tray:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container

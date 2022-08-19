@@ -1,0 +1,2144 @@
+#############################################
+# ingredient
+#############################################
+
+anchovy:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+apple:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  isA:
+  - ingredient
+arugula:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+bacon:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+banana:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  isA:
+  - ingredient
+banana_pudding:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - scoopable
+  isA:
+  - ingredient
+banana_pudding_mix:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+basil:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+batter:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - scoopable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+biscuit:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+biscuit_dough:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+black_bean:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+black_pepper:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+bloody_mary:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+bread:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+breadcrumb:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+broccoli:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+brown_sugar:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+brownie:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  isA:
+  - ingredient
+brownie_batter:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+butter:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - cookable
+  isA:
+  - ingredient
+cabbage:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+caesar_salad:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+canola_oil:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+carrot:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - cookable
+  isA:
+  - ingredient
+carrot_salad:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+cayenne_pepper:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+celery:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  isA:
+  - ingredient
+celery_salt:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+cheddar:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+cheese:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+cheese_sauce:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+chili_sauce:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+chocolate_chip:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+chocolate_chip_cookie:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+cilantro:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+club_sandwich:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - choppable
+  isA:
+  - ingredient
+coffee:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+condensed_milk:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+cooked_salmon:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+cookie_dough:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+coriander:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+crayfish_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+cream:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - scoopable
+  isA:
+  - ingredient
+cream_cheese:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - scoopable
+  isA:
+  - ingredient
+cucumber:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  isA:
+  - ingredient
+dalgona_coffee:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+dill:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+egg_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+egg_white_and_yolk:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+egg_yolk:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+escarole:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  isA:
+  - ingredient
+feta_cheese:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - choppable
+  isA:
+  - ingredient
+fish_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+flaxseed:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - scoopable
+  isA:
+  - ingredient
+flour:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+flour_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+garlic:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+garlic_bread:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - cookable
+  isA:
+  - ingredient
+garlic_butter:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+garlic_salt:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+ginger:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - cookable
+  isA:
+  - ingredient
+grapeseed_oil:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+greek_salad_dressing:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+green_bean:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+grilled_shrimp:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+ham:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - cookable
+  isA:
+  - ingredient
+hash_brown:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+heavy_cream:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+hot_sauce:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+instant_coffee:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+lemon:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - peelable
+  isA:
+  - ingredient
+lemon_extract:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+lemon_grass:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+lemon_juice:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+macaroni:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+macaroni_and_cheese:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+matzo:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  isA:
+  - ingredient
+mayonnaise:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+milk:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+mozzarella:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+mustard:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+oil_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+olive_oil:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+onion:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+pancake_mix:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+pasta_mix:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+pineapple:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - cookable
+  isA:
+  - ingredient
+potato:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+potato_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+powdered_sugar:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+protein_shake:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+pudding:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - scoopable
+  isA:
+  - ingredient
+pudding_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+raisin:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - cookable
+  isA:
+  - ingredient
+red_onion:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+refined_sugar:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+relish:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+salad:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+salad_dressing:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+salad_mix:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+salmon:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - peelable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+salt:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+salt_pepper_mixture:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+sea_salt:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+sesame_oil:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+shrimp:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - peelable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+sour_cream:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+spring_onion:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+strawberry:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+sugar:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+sweetener:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+tobasco_sauce:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+tomato:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - slicable
+  - choppable
+  - peelable
+  - cookable
+  isA:
+  - ingredient
+tomato_juice:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+tuna:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+tuna_sandwich:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - diceable
+  - choppable
+  isA:
+  - ingredient
+tuna_spread:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  isA:
+  - ingredient
+turkey:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - fryable
+  - cookable
+  isA:
+  - ingredient
+vanilla_extract:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+vanilla_wafer:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+vegetable_oil:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+vinegar:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+vodka:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+water:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  - cookable
+  isA:
+  - ingredient
+water_ice:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+whey_powder:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  isA:
+  - ingredient
+whipped_coffee:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - pourable
+  isA:
+  - ingredient
+whipped_cream:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+worcestershire_sauce:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+yogurt:
+  AtLocation:
+  - cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  - stackable
+  - spreadable
+  - pourable
+  isA:
+  - ingredient
+
+#############################################
+# ingredient_bottle
+#############################################
+
+bloody_mary_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - bloody_mary
+  isA:
+  - ing_bottle
+brown_sugar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - brown_sugar
+  isA:
+  - ing_bottle
+canola_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - canola_oil
+  isA:
+  - ing_bottle
+celery_salt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - celery_salt
+  isA:
+  - ing_bottle
+cheese_sauce_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - cheese_sauce
+  isA:
+  - ing_bottle
+coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - coffee
+  isA:
+  - ing_bottle
+condensed_milk_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - condensed_milk
+  isA:
+  - ing_bottle
+cream_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - cream
+  isA:
+  - ing_bottle
+dalgona_coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - dalgona_coffee
+  isA:
+  - ing_bottle
+flaxseed_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - flaxseed
+  isA:
+  - ing_bottle
+flour_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - flour
+  isA:
+  - ing_bottle
+garlic_salt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - garlic_salt
+  isA:
+  - ing_bottle
+grapeseed_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - grapeseed_oil
+  isA:
+  - ing_bottle
+greek_salad_dressing_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - greek_salad_dressing
+  isA:
+  - ing_bottle
+heavy_cream_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - heavy_cream
+  isA:
+  - ing_bottle
+instant_coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - instant_coffee
+  isA:
+  - ing_bottle
+milk_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - milk
+  isA:
+  - ing_bottle
+oil_mixture_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - oil_mixture
+  isA:
+  - ing_bottle
+pancake_mix_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - pancake_mix
+  isA:
+  - ing_bottle
+pasta_mix_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - pasta_mix
+  isA:
+  - ing_bottle
+powdered_sugar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - powdered_sugar
+  isA:
+  - ing_bottle
+protein_shake_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - protein_shake
+  isA:
+  - ing_bottle
+refined_sugar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - refined_sugar
+  isA:
+  - ing_bottle
+salad_dressing_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - salad_dressing
+  isA:
+  - ing_bottle
+sea_salt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - sea_salt
+  isA:
+  - ing_bottle
+sesame_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - sesame_oil
+  isA:
+  - ing_bottle
+sweetener_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - sweetener
+  isA:
+  - ing_bottle
+tobasco_sauce_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - tobasco_sauce
+  isA:
+  - ing_bottle
+tomato_juice_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - tomato_juice
+  isA:
+  - ing_bottle
+vanilla_extract_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vanilla_extract
+  isA:
+  - ing_bottle
+vegetable_oil_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vegetable_oil
+  isA:
+  - ing_bottle
+vinegar_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vinegar
+  isA:
+  - ing_bottle
+vodka_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - vodka
+  isA:
+  - ing_bottle
+water_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - water
+  isA:
+  - ing_bottle
+whey_powder_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - whey_powder
+  isA:
+  - ing_bottle
+whipped_coffee_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - whipped_coffee
+  isA:
+  - ing_bottle
+worcestershire_sauce_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - worcestershire_sauce
+  isA:
+  - ing_bottle
+yogurt_bottle:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  - pourable
+  contains:
+  - yogurt
+  isA:
+  - ing_bottle
+
+#############################################
+# container
+#############################################
+
+baking_tray:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+
+blender_cup:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+blender_jar:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+bowl:
+  AtLocation:
+  - near_cutting_board
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+cooking_pan:
+  AtLocation:
+  - table
+  - stove
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - cookware
+  - container
+
+drinking_glass:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+food_processor_bowl:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+highball_glass:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+jar:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+mixing_bowl:
+  AtLocation:
+  - near_cutting_board
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+muffin_pan:
+  AtLocation:
+  - stove
+  - oven
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - cookware
+  
+pan:
+  AtLocation:
+  - stove
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - cookware
+
+plate:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+pot:
+  AtLocation:
+  - cookware
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - dishware
+  - container
+
+salad_bowl:
+  AtLocation:
+  - table
+  - near_cutting_board
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - dishware
+
+skillet:
+  AtLocation:
+  - table
+  - stove
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+  - cookware
+
+tray:
+  AtLocation:
+  - table
+  HasProperty:
+  - moveable
+  - graspable
+  isA:
+  - container
+
+#############################################
+# place
+#############################################
+
+aluminium_foil:
+  HasProperty: []
+  isA:
+  - place
+cutting_board:
+  HasProperty: []
+  isA:
+  - place
+fridge:
+  HasProperty: []
+  isA:
+  - place
+grill:
+  HasProperty: []
+  isA:
+  - place
+microwave:
+  HasProperty: []
+  isA:
+  - place
+near_cutting_board:
+  HasProperty: []
+  isA:
+  - place
+oven:
+  HasProperty: []
+  isA:
+  - place
+parchment_paper:
+  HasProperty: []
+  isA:
+  - place
+saran_wrap:
+  HasProperty: []
+  isA:
+  - place
+stove:
+  HasProperty: []
+  isA:
+  - place
+table:
+  HasProperty: []
+  isA:
+  - place
+
+#############################################
+# tool
+#############################################
+
+blender:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool
+cooking_spray:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - cook
+  - spread
+  isA:
+  - tool
+food_processor:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool
+garlic_press:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool
+mixer:
+  AtLocation:
+  - table
+  HasProperty:
+  - movable
+  - graspable
+  capableOf:
+  - chop
+  isA:
+  - tool
