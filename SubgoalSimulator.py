@@ -9,6 +9,8 @@ from collections import defaultdict, deque
 from os.path import dirname
 from collections import defaultdict
 import copy
+from utils.load_files import workspace_dir
+
 
 def sigmoid(x):
     return 1 / (1 +np.exp(-x))
@@ -40,11 +42,11 @@ class SubgoalSimulator():
         # ing_map_path: 요리의 아이덴티티가 되는 재료를 저장
         # e.g. tuna sandwich: [tuna, bread] (요리 set중에 tuna나 bread를 가진 것을 샌드위치라 판단
         with open(ing_map_path) as f:
-            self.ing_map_key = yaml.load(f,Loader=yaml.FullLoader)
+            self.ing_map_key = yaml.load(f, Loader=yaml.FullLoader)
 
         # 없는 도구를 저절로 치환 e.g. muffin pan: pan => 레시피에 muffin map이 등장하면 pan으로 mapping
         with open(tool_map_path) as f:
-            self.tool_map = yaml.load(f,Loader=yaml.FullLoader)
+            self.tool_map = yaml.load(f, Loader=yaml.FullLoader)
 
         self.__csv2subgoals__(goal_path,num_top) #self.goals_list만듦
 
@@ -579,6 +581,8 @@ class SubgoalSimulator():
 
 if __name__ == '__main__':
 
+    WS_DIR = workspace_dir()
+
     path_common = './infer_1049/club_sandwich/club_sandwich_1800_'
     real_number_path=path_common+'real_number.csv'
     file_info=path_common+'info.txt'
@@ -603,7 +607,7 @@ if __name__ == '__main__':
     #print("subgoals for task planner")
     #for task in subgoals_task:
     #    print(task)
-#    subgoal.__csv2subgoals__(filepath1,5)
+    # subgoal.__csv2subgoals__(filepath1,5)
     print("end")
 
 

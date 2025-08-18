@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>panda_move</name>
+  <version>0.0.1</version>
+  <description>panda_move package for ROS 2 Humble</description>
+  <maintainer email="jenicloun@hanyang.ac.kr">soojin</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Message and service generation dependencies -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>moveit_msgs</exec_depend>
+  <exec_depend>trajectory_msgs</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+
+  <!-- Python scripts and utilities -->
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+
+  <!-- Optional: TCP endpoint -->
+  <exec_depend>ros_tcp_endpoint</exec_depend>
+
+  <!-- Export for ament tools -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
