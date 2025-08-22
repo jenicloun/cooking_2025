@@ -1,0 +1,5 @@
+
+string[] object_name
+geometry_msgs/Point[] position
+geometry_msgs/Quaternion[] orientation
+float64[] joint_state

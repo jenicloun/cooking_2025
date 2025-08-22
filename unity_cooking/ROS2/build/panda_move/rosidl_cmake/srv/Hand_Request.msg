@@ -1,0 +1,3 @@
+bool grasp_state
+string object_name
+float64 grasp_size

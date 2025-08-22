@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from panda_move/srv/MotionCheck.srv
+// generated code does not contain a copyright notice
+
+
+module panda_move {
+  module srv {
+    struct MotionCheck_Request {
+      string motion_type;
+
+      sequence<string> object_1;
+
+      sequence<string> object_2;
+    };
+    struct MotionCheck_Response {
+      int64 execute_state;
+    };
+  };
+};

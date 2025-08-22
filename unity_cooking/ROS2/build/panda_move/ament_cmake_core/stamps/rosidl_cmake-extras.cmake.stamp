@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(panda_move_IDL_FILES "msg/Action.idl;msg/Predicate.idl;msg/ExecutionCheck.idl;srv/Init.idl;srv/Sync.idl;srv/Plan.idl;srv/Hand.idl;srv/MotionCheck.idl;srv/ActionSequences.idl;srv/NewState.idl")
+set(panda_move_INTERFACE_FILES "msg/Action.msg;msg/Predicate.msg;msg/ExecutionCheck.msg;srv/Init.srv;srv/Init_Request.msg;srv/Init_Response.msg;srv/Sync.srv;srv/Sync_Request.msg;srv/Sync_Response.msg;srv/Plan.srv;srv/Plan_Request.msg;srv/Plan_Response.msg;srv/Hand.srv;srv/Hand_Request.msg;srv/Hand_Response.msg;srv/MotionCheck.srv;srv/MotionCheck_Request.msg;srv/MotionCheck_Response.msg;srv/ActionSequences.srv;srv/ActionSequences_Request.msg;srv/ActionSequences_Response.msg;srv/NewState.srv;srv/NewState_Request.msg;srv/NewState_Response.msg")

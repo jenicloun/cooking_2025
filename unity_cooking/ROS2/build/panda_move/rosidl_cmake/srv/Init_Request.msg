@@ -1,0 +1,5 @@
+string[] activated_object
+geometry_msgs/Point[] position
+geometry_msgs/Quaternion[] orientation
+geometry_msgs/Vector3[] scale
+float64[] joint_state

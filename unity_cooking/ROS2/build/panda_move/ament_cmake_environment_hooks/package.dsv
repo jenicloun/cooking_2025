@@ -1,0 +1,4 @@
+source;share/panda_move/local_setup.bash
+source;share/panda_move/local_setup.dsv
+source;share/panda_move/local_setup.sh
+source;share/panda_move/local_setup.zsh

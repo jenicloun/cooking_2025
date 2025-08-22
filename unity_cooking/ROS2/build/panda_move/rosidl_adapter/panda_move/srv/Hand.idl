@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from panda_move/srv/Hand.srv
+// generated code does not contain a copyright notice
+
+
+module panda_move {
+  module srv {
+    struct Hand_Request {
+      boolean grasp_state;
+
+      string object_name;
+
+      double grasp_size;
+    };
+    struct Hand_Response {
+      int64 execute_state;
+    };
+  };
+};

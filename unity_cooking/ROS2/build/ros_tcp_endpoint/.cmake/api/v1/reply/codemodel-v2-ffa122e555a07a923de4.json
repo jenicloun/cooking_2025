@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a5c41ae34e753f509abe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "ros_tcp_endpoint__py",
+					"jsonFile" : "directory-ros_tcp_endpoint__py-7ec3fd690e6e04868fd7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint/ros_tcp_endpoint__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ros_tcp_endpoint",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ros_tcp_endpoint_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ros_tcp_endpoint_egg-5c34785ebaa084deb806.json",
+					"name" : "ament_cmake_python_build_ros_tcp_endpoint_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ros_tcp_endpoint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ros_tcp_endpoint-48d683dbe6ffa89506e3.json",
+					"name" : "ament_cmake_python_copy_ros_tcp_endpoint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint-21bcff4554e56ff0d5e6.json",
+					"name" : "ros_tcp_endpoint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__cpp-f9a035cd2148ea6fd19a.json",
+					"name" : "ros_tcp_endpoint__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ros_tcp_endpoint__py::@939809b5ca506e33953f",
+					"jsonFile" : "target-ros_tcp_endpoint__py-742381afc69610a02d27.json",
+					"name" : "ros_tcp_endpoint__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_generator_c-a8a84151bb96bd88d846.json",
+					"name" : "ros_tcp_endpoint__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_generator_py-0f10c2e88c8a32395f7d.json",
+					"name" : "ros_tcp_endpoint__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_c-41350da668a288e574ef.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_c__pyext-93f0192948d11c0cc281.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_cpp-9dd987a367566c8c50be.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_fastrtps_c-ac953396cd43cd8de22e.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_fastrtps_c__pyext-05dcfc320241639dddbb.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp-fce55d0da335a5e45c07.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_introspection_c-6ed4f22c76364cb5f42c.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_introspection_c__pyext-7959962a0d3c213e7af9.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint__rosidl_typesupport_introspection_cpp-e0370c9b72b33d292e6f.json",
+					"name" : "ros_tcp_endpoint__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tcp_endpoint_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tcp_endpoint_uninstall-728741a2cf0caa0ba8bd.json",
+					"name" : "ros_tcp_endpoint_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cdd89bcc84e194c27221.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint",
+		"source" : "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/ros_tcp_endpoint"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

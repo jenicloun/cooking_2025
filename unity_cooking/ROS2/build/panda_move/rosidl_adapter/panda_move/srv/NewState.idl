@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from panda_move/srv/NewState.srv
+// generated code does not contain a copyright notice
+
+#include "panda_move/msg/Predicate.idl"
+
+module panda_move {
+  module srv {
+    struct NewState_Request {
+      sequence<panda_move::msg::Predicate> new_state;
+    };
+    struct NewState_Response {
+      boolean result;
+    };
+  };
+};

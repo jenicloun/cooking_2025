@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from panda_move/msg/Predicate.msg
+// generated code does not contain a copyright notice
+
+
+module panda_move {
+  module msg {
+    struct Predicate {
+      string name;
+
+      sequence<string> params;
+    };
+  };
+};

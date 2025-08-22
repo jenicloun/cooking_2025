@@ -1,0 +1,1 @@
+string[] activated_object

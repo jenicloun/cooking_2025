@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>panda_moveit_config</name>
+  <version>0.7.4</version>
+  <description>
+    An automatically generated package with all the configuration and launch files for using the panda with the MoveIt2 Motion Planning Framework
+  </description>
+
+  <maintainer email="mike@picknik.ai">Mike Lautman</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://moveit.ros.org/</url>
+  <url type="bugtracker">https://github.com/ros-planning/moveit/issues</url>
+  <url type="repository">https://github.com/ros-planning/moveit</url>
+
+  <!-- Build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>franka_description</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>topic_tools</exec_depend>
+  
+  <!-- Optional dependency, commented out as in original -->
+  <!-- <exec_depend>warehouse_ros_mongo</exec_depend> -->
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
