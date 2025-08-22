@@ -1,1 +1,1 @@
-/opt/ros/humble:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_moveit_config:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/franka_description
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move:/opt/ros/humble:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_moveit_config:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/franka_description

@@ -376,7 +376,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/panda_move" TYPE DIRECTORY FILES "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move/./")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/panda_move" TYPE PROGRAM FILES "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move/scripts/main_ros2.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

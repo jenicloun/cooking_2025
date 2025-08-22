@@ -41,8 +41,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 ## Python 스크립트 설치
 ###################################
 install(
-  DIRECTORY ./
+  PROGRAMS
+    scripts/main_ros2.py
   DESTINATION lib/${PROJECT_NAME}
 )
+
+ament_export_dependencies(rosidl_generate_interfaces)
 
 ament_package()

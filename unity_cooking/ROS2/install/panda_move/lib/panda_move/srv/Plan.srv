@@ -1,3 +1,0 @@
-moveit_msgs/RobotTrajectory[] trajectories
----
-int64 execute_state
