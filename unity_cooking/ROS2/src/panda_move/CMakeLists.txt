@@ -42,7 +42,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 ###################################
 install(
   PROGRAMS
-    scripts/main_ros2.py
+    panda_move/main_ros2.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

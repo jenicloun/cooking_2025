@@ -16,7 +16,6 @@ def sigmoid(x):
     return 1 / (1 +np.exp(-x))
 
 def intersection(A,B): # return intersection
-
     if isinstance(A,list) & isinstance(B,list):
         C = list(set(A)&set(B))
         return C
@@ -584,8 +583,8 @@ if __name__ == '__main__':
     WS_DIR = workspace_dir()
 
     path_common = './infer_1049/club_sandwich/club_sandwich_1800_'
-    real_number_path=path_common+'real_number.csv'
-    file_info=path_common+'info.txt'
+    real_number_path = path_common+'real_number.csv'
+    file_info = path_common+'info.txt'
     gt_path = path_common+'label.csv'
     kb_path = './yaml/total.yaml'
     ing_map_path = 'Ingredient_mapping.yaml'
