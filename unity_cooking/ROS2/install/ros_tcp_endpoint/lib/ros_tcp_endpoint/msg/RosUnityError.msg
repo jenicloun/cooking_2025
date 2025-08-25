@@ -1,1 +1,1 @@
-string message
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/ros_tcp_endpoint/./msg/RosUnityError.msg

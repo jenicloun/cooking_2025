@@ -1,0 +1,329 @@
+[0.005s] Invoking command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/ros_tcp_endpoint -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint
+[0.026s] -- The C compiler identification is GNU 11.4.0
+[0.048s] -- The CXX compiler identification is GNU 11.4.0
+[0.051s] -- Detecting C compiler ABI info
+[0.078s] -- Detecting C compiler ABI info - done
+[0.081s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.081s] -- Detecting C compile features
+[0.081s] -- Detecting C compile features - done
+[0.082s] -- Detecting CXX compiler ABI info
+[0.115s] -- Detecting CXX compiler ABI info - done
+[0.118s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.118s] -- Detecting CXX compile features
+[0.118s] -- Detecting CXX compile features - done
+[0.119s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.181s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.208s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.220s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.220s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.234s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.236s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.240s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.251s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.262s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.402s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.575s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.637s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.648s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.649s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.661s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.661s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.661s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.661s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.670s] -- Found PythonExtra: .so  
+[0.694s] -- Configuring done
+[0.708s] -- Generating done
+[0.713s] -- Build files have been written to: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint
+[0.718s] Invoked command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/ros_tcp_endpoint -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint
+[0.719s] Invoking command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint -- -j16 -l16
+[0.734s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.738s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.741s] [  3%] Built target ament_cmake_python_symlink_ros_tcp_endpoint
+[0.849s] running egg_info
+[0.850s] creating ros_tcp_endpoint.egg-info
+[0.850s] writing ros_tcp_endpoint.egg-info/PKG-INFO
+[0.850s] writing dependency_links to ros_tcp_endpoint.egg-info/dependency_links.txt
+[0.850s] writing top-level names to ros_tcp_endpoint.egg-info/top_level.txt
+[0.850s] writing manifest file 'ros_tcp_endpoint.egg-info/SOURCES.txt'
+[0.851s] reading manifest file 'ros_tcp_endpoint.egg-info/SOURCES.txt'
+[0.851s] writing manifest file 'ros_tcp_endpoint.egg-info/SOURCES.txt'
+[0.865s] [  3%] Built target ament_cmake_python_build_ros_tcp_endpoint_egg
+[0.913s] [  3%] Built target ros_tcp_endpoint__cpp
+[0.915s] [  5%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_c.dir/rosidl_generator_c/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__functions.c.o[0m
+[0.915s] [  7%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_c.dir/rosidl_generator_c/ros_tcp_endpoint/msg/detail/ros_unity_error__functions.c.o[0m
+[0.915s] [  9%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_c.dir/rosidl_generator_c/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__functions.c.o[0m
+[0.916s] [ 10%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_c.dir/rosidl_generator_c/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__functions.c.o[0m
+[0.919s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.919s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.919s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.949s] [ 18%] [32m[1mLinking C shared library libros_tcp_endpoint__rosidl_generator_c.so[0m
+[0.966s] [ 18%] Built target ros_tcp_endpoint__rosidl_generator_c
+[0.971s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.971s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.971s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.052s] [ 25%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_tcp_endpoint/srv/ros_unity_topic_list__type_support.cpp.o[0m
+[1.052s] [ 27%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_tcp_endpoint/msg/ros_unity_error__type_support.cpp.o[0m
+[1.053s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_tcp_endpoint/msg/ros_unity_srv_message__type_support.cpp.o[0m
+[1.053s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_tcp_endpoint/msg/ros_unity_sys_command__type_support.cpp.o[0m
+[1.086s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__type_support.cpp.o[0m
+[1.086s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_tcp_endpoint/msg/detail/ros_unity_error__type_support.cpp.o[0m
+[1.086s] [ 38%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__type_support.cpp.o[0m
+[1.086s] [ 38%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__type_support.cpp.o[0m
+[1.100s] [ 40%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_tcp_endpoint/msg/detail/dds_fastrtps/ros_unity_srv_message__type_support.cpp.o[0m
+[1.101s] [ 43%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_tcp_endpoint/msg/detail/dds_fastrtps/ros_unity_sys_command__type_support.cpp.o[0m
+[1.101s] [ 43%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_tcp_endpoint/srv/detail/dds_fastrtps/ros_unity_topic_list__type_support.cpp.o[0m
+[1.103s] [ 45%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_tcp_endpoint/msg/detail/dds_fastrtps/ros_unity_error__type_support.cpp.o[0m
+[1.142s] [ 47%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_tcp_endpoint/msg/ros_unity_error__type_support.cpp.o[0m
+[1.152s] [ 49%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_tcp_endpoint/msg/ros_unity_srv_message__type_support.cpp.o[0m
+[1.182s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_tcp_endpoint/msg/ros_unity_sys_command__type_support.cpp.o[0m
+[1.197s] [ 52%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_tcp_endpoint/srv/ros_unity_topic_list__type_support.cpp.o[0m
+[1.221s] [ 54%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_tcp_endpoint/msg/detail/ros_unity_error__type_support_c.cpp.o[0m
+[1.222s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__type_support_c.cpp.o[0m
+[1.222s] [ 58%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__type_support_c.cpp.o[0m
+[1.227s] [ 61%] [32mBuilding CXX object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__type_support_c.cpp.o[0m
+[1.227s] [ 61%] [32m[1mLinking CXX shared library libros_tcp_endpoint__rosidl_typesupport_c.so[0m
+[1.227s] [ 63%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_tcp_endpoint/msg/detail/ros_unity_error__type_support.c.o[0m
+[1.235s] [ 65%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__type_support.c.o[0m
+[1.243s] [ 67%] [32m[1mLinking CXX shared library libros_tcp_endpoint__rosidl_typesupport_cpp.so[0m
+[1.263s] [ 69%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__type_support.c.o[0m
+[1.268s] [ 70%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__type_support.c.o[0m
+[1.268s] [ 70%] Built target ros_tcp_endpoint__rosidl_typesupport_c
+[1.300s] [ 70%] Built target ros_tcp_endpoint__rosidl_typesupport_cpp
+[1.316s] [ 72%] [32m[1mLinking C shared library libros_tcp_endpoint__rosidl_typesupport_introspection_c.so[0m
+[1.340s] [ 72%] Built target ros_tcp_endpoint__rosidl_typesupport_introspection_c
+[1.346s] [ 74%] [32m[1mLinking CXX shared library libros_tcp_endpoint__rosidl_typesupport_introspection_cpp.so[0m
+[1.382s] [ 74%] Built target ros_tcp_endpoint__rosidl_typesupport_introspection_cpp
+[1.404s] [ 76%] [32m[1mLinking CXX shared library libros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.437s] [ 78%] [32m[1mLinking CXX shared library libros_tcp_endpoint__rosidl_typesupport_fastrtps_c.so[0m
+[1.437s] [ 78%] Built target ros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp
+[1.469s] [ 78%] Built target ros_tcp_endpoint__rosidl_typesupport_fastrtps_c
+[1.477s] [ 78%] Built target ros_tcp_endpoint
+[1.485s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.703s] [ 80%] Built target ros_tcp_endpoint__py
+[1.710s] [ 83%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_py.dir/rosidl_generator_py/ros_tcp_endpoint/msg/_ros_unity_srv_message_s.c.o[0m
+[1.710s] [ 83%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_py.dir/rosidl_generator_py/ros_tcp_endpoint/msg/_ros_unity_error_s.c.o[0m
+[1.710s] [ 87%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_py.dir/rosidl_generator_py/ros_tcp_endpoint/srv/_ros_unity_topic_list_s.c.o[0m
+[1.710s] [ 87%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_generator_py.dir/rosidl_generator_py/ros_tcp_endpoint/msg/_ros_unity_sys_command_s.c.o[0m
+[1.752s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/ros_tcp_endpoint/libros_tcp_endpoint__rosidl_generator_py.so[0m
+[1.768s] [ 89%] Built target ros_tcp_endpoint__rosidl_generator_py
+[1.776s] [ 94%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_tcp_endpoint/_ros_tcp_endpoint_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.776s] [ 94%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_tcp_endpoint/_ros_tcp_endpoint_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.776s] [ 94%] [32mBuilding C object CMakeFiles/ros_tcp_endpoint__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_tcp_endpoint/_ros_tcp_endpoint_s.ep.rosidl_typesupport_c.c.o[0m
+[1.818s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.818s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.820s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.833s] [100%] Built target ros_tcp_endpoint__rosidl_typesupport_fastrtps_c__pyext
+[1.833s] [100%] Built target ros_tcp_endpoint__rosidl_typesupport_c__pyext
+[1.833s] [100%] Built target ros_tcp_endpoint__rosidl_typesupport_introspection_c__pyext
+[1.838s] Invoked command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint -- -j16 -l16
+[1.838s] Invoking command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint
+[1.841s] -- Install configuration: ""
+[1.842s] -- Execute custom install script
+[1.842s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ament_index/resource_index/rosidl_interfaces/ros_tcp_endpoint
+[1.845s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__functions.h
+[1.848s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__struct.h
+[1.851s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__type_support.h
+[1.854s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__functions.h
+[1.856s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__struct.h
+[1.859s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__type_support.h
+[1.862s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__functions.h
+[1.865s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__struct.h
+[1.867s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__type_support.h
+[1.870s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/ros_unity_error.h
+[1.873s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/ros_unity_srv_message.h
+[1.876s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/ros_unity_sys_command.h
+[1.878s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/rosidl_generator_c__visibility_control.h
+[1.881s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__functions.h
+[1.884s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__struct.h
+[1.887s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__type_support.h
+[1.890s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/ros_unity_topic_list.h
+[1.893s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/library_path.sh
+[1.895s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/library_path.dsv
+[1.898s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__rosidl_typesupport_fastrtps_c.h
+[1.901s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__rosidl_typesupport_fastrtps_c.h
+[1.904s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__rosidl_typesupport_fastrtps_c.h
+[1.907s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.909s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__rosidl_typesupport_fastrtps_c.h
+[1.912s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__builder.hpp
+[1.915s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__struct.hpp
+[1.918s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__traits.hpp
+[1.921s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__type_support.hpp
+[1.924s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__builder.hpp
+[1.926s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__struct.hpp
+[1.929s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__traits.hpp
+[1.932s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__type_support.hpp
+[1.935s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__builder.hpp
+[1.937s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__struct.hpp
+[1.940s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__traits.hpp
+[1.943s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__type_support.hpp
+[1.945s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/ros_unity_error.hpp
+[1.948s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/ros_unity_srv_message.hpp
+[1.951s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/ros_unity_sys_command.hpp
+[1.954s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.956s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__builder.hpp
+[1.959s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__struct.hpp
+[1.962s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__traits.hpp
+[1.965s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__type_support.hpp
+[1.968s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/ros_unity_topic_list.hpp
+[1.971s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__rosidl_typesupport_fastrtps_cpp.hpp
+[1.973s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__rosidl_typesupport_fastrtps_cpp.hpp
+[1.976s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__rosidl_typesupport_fastrtps_cpp.hpp
+[1.979s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.982s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__rosidl_typesupport_fastrtps_cpp.hpp
+[1.985s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__rosidl_typesupport_introspection_c.h
+[1.987s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__rosidl_typesupport_introspection_c.h
+[1.990s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__rosidl_typesupport_introspection_c.h
+[1.993s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.996s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__rosidl_typesupport_introspection_c.h
+[1.999s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_error__rosidl_typesupport_introspection_cpp.hpp
+[2.002s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_srv_message__rosidl_typesupport_introspection_cpp.hpp
+[2.005s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/msg/detail/ros_unity_sys_command__rosidl_typesupport_introspection_cpp.hpp
+[2.009s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/include/ros_tcp_endpoint/ros_tcp_endpoint/srv/detail/ros_unity_topic_list__rosidl_typesupport_introspection_cpp.hpp
+[2.012s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/pythonpath.sh
+[2.015s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/pythonpath.dsv
+[2.018s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint-0.4.0-py3.10.egg-info/PKG-INFO
+[2.021s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint-0.4.0-py3.10.egg-info/SOURCES.txt
+[2.024s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint-0.4.0-py3.10.egg-info/dependency_links.txt
+[2.027s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint-0.4.0-py3.10.egg-info/top_level.txt
+[2.030s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/__init__.py
+[2.033s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/_ros_tcp_endpoint_s.ep.rosidl_typesupport_c.c
+[2.036s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/_ros_tcp_endpoint_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.039s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/_ros_tcp_endpoint_s.ep.rosidl_typesupport_introspection_c.c
+[2.042s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/libros_tcp_endpoint__rosidl_generator_py.so
+[2.045s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/__init__.py
+[2.048s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_error.py
+[2.051s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_error_s.c
+[2.053s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_srv_message.py
+[2.056s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_srv_message_s.c
+[2.059s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_sys_command.py
+[2.062s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_sys_command_s.c
+[2.064s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.067s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.070s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.073s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/srv/__init__.py
+[2.075s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/srv/_ros_unity_topic_list.py
+[2.078s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/srv/_ros_unity_topic_list_s.c
+[2.081s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.081s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.081s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/ros_tcp_endpoint_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.081s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/msg/RosUnityError.idl
+[2.084s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/msg/RosUnitySrvMessage.idl
+[2.087s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/msg/RosUnitySysCommand.idl
+[2.089s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/srv/RosUnityTopicList.idl
+[2.092s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/msg/RosUnityError.msg
+[2.095s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/msg/RosUnitySrvMessage.msg
+[2.097s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/msg/RosUnitySysCommand.msg
+[2.101s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/srv/RosUnityTopicList.srv
+[2.103s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/srv/RosUnityTopicList_Request.msg
+[2.106s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/srv/RosUnityTopicList_Response.msg
+[2.109s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.github/ISSUE_TEMPLATE/bug_report.md
+[2.112s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.github/ISSUE_TEMPLATE/config.yml
+[2.115s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.github/ISSUE_TEMPLATE/feature_request.md
+[2.118s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.github/PULL_REQUEST_TEMPLATE.md
+[2.120s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.github/workflows/pre-commit.yaml
+[2.123s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.gitignore
+[2.126s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.pre-commit-config.yaml
+[2.129s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/.yamato/yamato-config.yml
+[2.132s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/CHANGELOG.md
+[2.135s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/CMakeLists.txt
+[2.139s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/CODE_OF_CONDUCT.md
+[2.142s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/CONTRIBUTING.md
+[2.144s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/LICENSE
+[2.147s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/README.md
+[2.150s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/config/params.yaml
+[2.153s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/launch/endpoint.launch
+[2.156s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/msg/RosUnityError.msg
+[2.159s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/msg/RosUnitySrvMessage.msg
+[2.163s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/msg/RosUnitySysCommand.msg
+[2.165s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/package.xml
+[2.168s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/requirements.txt
+[2.171s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/setup.py
+[2.174s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/__init__.py
+[2.177s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/client.py
+[2.180s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/communication.py
+[2.182s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/default_server_endpoint.py
+[2.186s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/exceptions.py
+[2.189s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/publisher.py
+[2.192s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/server.py
+[2.195s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/service.py
+[2.198s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/subscriber.py
+[2.202s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/tcp_sender.py
+[2.205s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/thread_pauser.py
+[2.208s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/src/ros_tcp_endpoint/unity_service.py
+[2.211s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/srv/RosUnityTopicList.srv
+[2.214s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/__init__.py
+[2.217s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_client.py
+[2.220s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_publisher.py
+[2.223s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_ros_service.py
+[2.226s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_server.py
+[2.229s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_subscriber.py
+[2.232s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_tcp_sender.py
+[2.234s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_thread_pauser.py
+[2.237s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/test/test_unity_service.py
+[2.240s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ament_index/resource_index/package_run_dependencies/ros_tcp_endpoint
+[2.243s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ament_index/resource_index/parent_prefix_path/ros_tcp_endpoint
+[2.246s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/ament_prefix_path.sh
+[2.249s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/ament_prefix_path.dsv
+[2.252s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/path.sh
+[2.254s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/environment/path.dsv
+[2.257s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/local_setup.bash
+[2.260s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/local_setup.sh
+[2.263s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/local_setup.zsh
+[2.266s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/local_setup.dsv
+[2.268s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.dsv
+[2.271s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ament_index/resource_index/packages/ros_tcp_endpoint
+[2.274s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/rosidl_cmake-extras.cmake
+[2.277s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.280s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.283s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ament_cmake_export_libraries-extras.cmake
+[2.285s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ament_cmake_export_targets-extras.cmake
+[2.288s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.291s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.294s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpointConfig.cmake
+[2.296s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpointConfig-version.cmake
+[2.299s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.xml
+[2.302s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_generator_c.so
+[2.302s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_generator_c.so" to ""
+[2.302s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_fastrtps_c.so
+[2.302s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_fastrtps_c.so" to ""
+[2.302s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp.so
+[2.302s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.302s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_introspection_c.so
+[2.302s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_introspection_c.so" to ""
+[2.302s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_c.so
+[2.303s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_c.so" to ""
+[2.303s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_introspection_cpp.so
+[2.303s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_introspection_cpp.so" to ""
+[2.303s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_cpp.so
+[2.303s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_typesupport_cpp.so" to ""
+[2.319s] Listing '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint'...
+[2.319s] Compiling '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/__init__.py'...
+[2.319s] Listing '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg'...
+[2.319s] Compiling '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/__init__.py'...
+[2.319s] Compiling '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_error.py'...
+[2.319s] Compiling '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_srv_message.py'...
+[2.319s] Compiling '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/msg/_ros_unity_sys_command.py'...
+[2.319s] Listing '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/srv'...
+[2.319s] Compiling '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/srv/__init__.py'...
+[2.319s] Compiling '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/local/lib/python3.10/dist-packages/ros_tcp_endpoint/srv/_ros_unity_topic_list.py'...
+[2.321s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_generator_py.so
+[2.321s] -- Set runtime path of "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib/libros_tcp_endpoint__rosidl_generator_py.so" to ""
+[2.321s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_generator_cExport.cmake
+[2.321s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_generator_cExport-noconfig.cmake
+[2.321s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_typesupport_fastrtps_cExport.cmake
+[2.321s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_generator_cppExport.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_introspection_cExport.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_cExport.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_cExport-noconfig.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_introspection_cppExport.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_cppExport.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/ros_tcp_endpoint__rosidl_typesupport_cppExport-noconfig.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_generator_pyExport.cmake
+[2.322s] -- Installing: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake/export_ros_tcp_endpoint__rosidl_generator_pyExport-noconfig.cmake
+[2.324s] Invoked command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint

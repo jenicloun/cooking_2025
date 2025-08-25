@@ -1,5 +1,1 @@
-string motion_type
-string[] object_1
-string[] object_2
----
-int64 execute_state
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move/srv/MotionCheck.srv

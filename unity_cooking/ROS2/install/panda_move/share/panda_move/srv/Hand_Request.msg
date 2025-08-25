@@ -1,3 +1,1 @@
-bool grasp_state
-string object_name
-float64 grasp_size
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/rosidl_cmake/srv/Hand_Request.msg

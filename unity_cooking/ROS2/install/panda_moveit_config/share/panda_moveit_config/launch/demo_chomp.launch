@@ -1,5 +1,1 @@
-<launch>
-  <include file="$(find panda_moveit_config)/launch/demo.launch">
-    <arg name="pipeline" value="chomp"/>
-  </include>
-</launch>
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_moveit_config/launch/demo_chomp.launch

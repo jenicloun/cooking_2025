@@ -1,15 +1,1 @@
-// generated from rosidl_adapter/resource/srv.idl.em
-// with input from ros_tcp_endpoint/srv/RosUnityTopicList.srv
-// generated code does not contain a copyright notice
-
-
-module ros_tcp_endpoint {
-  module srv {
-    struct RosUnityTopicList_Request {
-      uint8 structure_needs_at_least_one_member;
-    };
-    struct RosUnityTopicList_Response {
-      sequence<string> topics;
-    };
-  };
-};
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint/rosidl_adapter/ros_tcp_endpoint/srv/RosUnityTopicList.idl

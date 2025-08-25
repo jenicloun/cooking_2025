@@ -1,3 +1,1 @@
-string motion_type
-string[] object_1
-string[] object_2
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/rosidl_cmake/srv/MotionCheck_Request.msg

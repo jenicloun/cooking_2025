@@ -1,14 +1,1 @@
-# generated from ament/cmake/core/templates/nameConfig-version.cmake.in
-set(PACKAGE_VERSION "0.7.4")
-
-set(PACKAGE_VERSION_EXACT False)
-set(PACKAGE_VERSION_COMPATIBLE False)
-
-if("${PACKAGE_FIND_VERSION}" VERSION_EQUAL "${PACKAGE_VERSION}")
-  set(PACKAGE_VERSION_EXACT True)
-  set(PACKAGE_VERSION_COMPATIBLE True)
-endif()
-
-if("${PACKAGE_FIND_VERSION}" VERSION_LESS "${PACKAGE_VERSION}")
-  set(PACKAGE_VERSION_COMPATIBLE True)
-endif()
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_moveit_config/ament_cmake_core/panda_moveit_configConfig-version.cmake

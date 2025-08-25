@@ -1,3 +1,1 @@
-source;share/panda_move/environment/ament_prefix_path.sh
-source;share/panda_move/environment/library_path.sh
-source;share/panda_move/environment/path.sh
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/ament_cmake_environment_hooks/local_setup.dsv

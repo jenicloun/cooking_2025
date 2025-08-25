@@ -4,9 +4,3 @@ ros_tcp_endpoint.egg-info/PKG-INFO
 ros_tcp_endpoint.egg-info/SOURCES.txt
 ros_tcp_endpoint.egg-info/dependency_links.txt
 ros_tcp_endpoint.egg-info/top_level.txt
-ros_tcp_endpoint/msg/__init__.py
-ros_tcp_endpoint/msg/_ros_unity_error.py
-ros_tcp_endpoint/msg/_ros_unity_srv_message.py
-ros_tcp_endpoint/msg/_ros_unity_sys_command.py
-ros_tcp_endpoint/srv/__init__.py
-ros_tcp_endpoint/srv/_ros_unity_topic_list.py

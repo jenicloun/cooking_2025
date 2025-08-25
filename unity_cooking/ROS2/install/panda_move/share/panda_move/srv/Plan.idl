@@ -1,16 +1,1 @@
-// generated from rosidl_adapter/resource/srv.idl.em
-// with input from panda_move/srv/Plan.srv
-// generated code does not contain a copyright notice
-
-#include "moveit_msgs/msg/RobotTrajectory.idl"
-
-module panda_move {
-  module srv {
-    struct Plan_Request {
-      sequence<moveit_msgs::msg::RobotTrajectory> trajectories;
-    };
-    struct Plan_Response {
-      int64 execute_state;
-    };
-  };
-};
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/rosidl_adapter/panda_move/srv/Plan.idl

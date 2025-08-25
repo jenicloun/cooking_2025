@@ -315,17 +315,17 @@ ros_tcp_endpoint__rosidl_typesupport_cpp/fast:
 .PHONY : ros_tcp_endpoint__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_ros_tcp_endpoint
+# Target rules for targets named ament_cmake_python_symlink_ros_tcp_endpoint
 
 # Build rule for target.
-ament_cmake_python_copy_ros_tcp_endpoint: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_ros_tcp_endpoint
-.PHONY : ament_cmake_python_copy_ros_tcp_endpoint
+ament_cmake_python_symlink_ros_tcp_endpoint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_ros_tcp_endpoint
+.PHONY : ament_cmake_python_symlink_ros_tcp_endpoint
 
 # fast build rule for target.
-ament_cmake_python_copy_ros_tcp_endpoint/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_ros_tcp_endpoint.dir/build.make CMakeFiles/ament_cmake_python_copy_ros_tcp_endpoint.dir/build
-.PHONY : ament_cmake_python_copy_ros_tcp_endpoint/fast
+ament_cmake_python_symlink_ros_tcp_endpoint/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_ros_tcp_endpoint.dir/build.make CMakeFiles/ament_cmake_python_symlink_ros_tcp_endpoint.dir/build
+.PHONY : ament_cmake_python_symlink_ros_tcp_endpoint/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_ros_tcp_endpoint_egg
@@ -1259,7 +1259,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_ros_tcp_endpoint_egg"
-	@echo "... ament_cmake_python_copy_ros_tcp_endpoint"
+	@echo "... ament_cmake_python_symlink_ros_tcp_endpoint"
 	@echo "... ros_tcp_endpoint"
 	@echo "... ros_tcp_endpoint__cpp"
 	@echo "... ros_tcp_endpoint__py"

@@ -1,12 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from panda_move/msg/ExecutionCheck.msg
-// generated code does not contain a copyright notice
-
-
-module panda_move {
-  module msg {
-    struct ExecutionCheck {
-      int64 status;
-    };
-  };
-};
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/rosidl_adapter/panda_move/msg/ExecutionCheck.idl

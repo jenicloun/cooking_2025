@@ -1,16 +1,1 @@
-import threading
-
-
-class ThreadPauser:
-    def __init__(self):
-        self.condition = threading.Condition()
-        self.result = None
-
-    def sleep_until_resumed(self):
-        with self.condition:
-            self.condition.wait()
-
-    def resume_with_result(self, result):
-        self.result = result
-        with self.condition:
-            self.condition.notify()
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/ros_tcp_endpoint/./src/ros_tcp_endpoint/thread_pauser.py

@@ -1,1 +1,1 @@
-int64 status
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move/msg/ExecutionCheck.msg

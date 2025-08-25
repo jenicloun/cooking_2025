@@ -1,4 +1,1 @@
-source;share/ros_tcp_endpoint/environment/ament_prefix_path.sh
-source;share/ros_tcp_endpoint/environment/library_path.sh
-source;share/ros_tcp_endpoint/environment/path.sh
-source;share/ros_tcp_endpoint/environment/pythonpath.sh
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/ros_tcp_endpoint/ament_cmake_environment_hooks/local_setup.dsv

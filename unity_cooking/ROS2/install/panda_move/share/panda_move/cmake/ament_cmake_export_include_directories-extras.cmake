@@ -1,16 +1,1 @@
-# generated from ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directories-extras.cmake.in
-
-set(_exported_include_dirs "${panda_move_DIR}/../../../include/panda_move")
-
-# append include directories to panda_move_INCLUDE_DIRS
-# warn about not existing paths
-if(NOT _exported_include_dirs STREQUAL "")
-  find_package(ament_cmake_core QUIET REQUIRED)
-  foreach(_exported_include_dir ${_exported_include_dirs})
-    if(NOT IS_DIRECTORY "${_exported_include_dir}")
-      message(WARNING "Package 'panda_move' exports the include directory '${_exported_include_dir}' which doesn't exist")
-    endif()
-    normalize_path(_exported_include_dir "${_exported_include_dir}")
-    list(APPEND panda_move_INCLUDE_DIRS "${_exported_include_dir}")
-  endforeach()
-endif()
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

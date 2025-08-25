@@ -1,14 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from panda_move/msg/Predicate.msg
-// generated code does not contain a copyright notice
-
-
-module panda_move {
-  module msg {
-    struct Predicate {
-      string name;
-
-      sequence<string> params;
-    };
-  };
-};
+/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/rosidl_adapter/panda_move/msg/Predicate.idl
