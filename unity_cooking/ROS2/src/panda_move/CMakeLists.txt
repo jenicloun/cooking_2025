@@ -40,10 +40,27 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 ###################################
 ## Python 스크립트 설치
 ###################################
+##install(
+##  PROGRAMS
+##    panda_move/main_ros2.py
+##    panda_move/object_level_motion.py
+
+##  DESTINATION lib/${PROJECT_NAME}
+##)
+
 install(
-  PROGRAMS
-    panda_move/main_ros2.py
-  DESTINATION lib/${PROJECT_NAME}
+  DIRECTORY panda_move/ 
+  DESTINATION lib/${PROJECT_NAME}/panda_move
+)
+
+install(
+  DIRECTORY srv/
+  DESTINATION lib/${PROJECT_NAME}/srv
+)
+
+install(
+  DIRECTORY test_set/
+  DESTINATION lib/${PROJECT_NAME}/test_set
 )
 
 ament_export_dependencies(rosidl_generate_interfaces)

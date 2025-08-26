@@ -439,8 +439,14 @@ ament_cmake_symlink_install_files("/home/jeni/Cook_subgoal_test/unity_cooking/RO
 # install(FILES "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/rosidl_cmake/srv/NewState_Response.msg" "DESTINATION" "share/panda_move/srv")
 ament_cmake_symlink_install_files("/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move" FILES "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/rosidl_cmake/srv/NewState_Response.msg" "DESTINATION" "share/panda_move/srv")
 
-# install(PROGRAMS "panda_move/main_ros2.py" "DESTINATION" "lib/panda_move")
-ament_cmake_symlink_install_programs("/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move" PROGRAMS "panda_move/main_ros2.py" "DESTINATION" "lib/panda_move")
+# install(DIRECTORY "panda_move/" "DESTINATION" "lib/panda_move/panda_move")
+ament_cmake_symlink_install_directory("/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move" DIRECTORY "panda_move/" "DESTINATION" "lib/panda_move/panda_move")
+
+# install(DIRECTORY "srv/" "DESTINATION" "lib/panda_move/srv")
+ament_cmake_symlink_install_directory("/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move" DIRECTORY "srv/" "DESTINATION" "lib/panda_move/srv")
+
+# install(DIRECTORY "test_set/" "DESTINATION" "lib/panda_move/test_set")
+ament_cmake_symlink_install_directory("/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move" DIRECTORY "test_set/" "DESTINATION" "lib/panda_move/test_set")
 
 # install(FILES "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/panda_move" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/src/panda_move" FILES "/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/panda_move" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

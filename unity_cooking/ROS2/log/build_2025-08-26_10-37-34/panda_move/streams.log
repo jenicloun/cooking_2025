@@ -1,0 +1,1247 @@
+[0.004s] Invoking command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move': CMAKE_PREFIX_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_moveit_config:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/franka_description:/opt/ros/humble LD_LIBRARY_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib:/usr/local/cuda-12.4/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.4/lib64 /usr/bin/cmake --build /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move -- -j16 -l16
+[0.017s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.068s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.070s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.070s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.080s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.080s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.083s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.086s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.091s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.099s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.103s] -- Found ros_tcp_endpoint: 0.4.0 (/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/share/ros_tcp_endpoint/cmake)
+[0.107s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[0.156s] -- Found controller_manager: 2.51.0 (/opt/ros/humble/share/controller_manager/cmake)
+[0.187s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.188s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.194s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.223s] -- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+[0.229s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.241s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.245s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[0.258s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.268s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.298s] -- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[0.300s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[0.308s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.311s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.316s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[0.327s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[0.337s] -- Found moveit_ros_perception: 2.5.9 (/opt/ros/humble/share/moveit_ros_perception/cmake)
+[0.338s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[0.519s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.782s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.886s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.890s] -- Configuring done
+[0.907s] -- Generating done
+[0.911s] -- Build files have been written to: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move
+[0.928s] [35m[1mConsolidate compiler generated dependencies of target panda_move__rosidl_generator_c[0m
+[0.932s] [  1%] Built target panda_move__cpp
+[0.933s] [ 15%] Built target panda_move__rosidl_generator_c
+[0.937s] [35m[1mConsolidate compiler generated dependencies of target panda_move__rosidl_typesupport_introspection_cpp[0m
+[0.937s] [35m[1mConsolidate compiler generated dependencies of target panda_move__rosidl_typesupport_cpp[0m
+[0.937s] [35m[1mConsolidate compiler generated dependencies of target panda_move__rosidl_typesupport_fastrtps_cpp[0m
+[0.937s] [35m[1mConsolidate compiler generated dependencies of target panda_move__rosidl_typesupport_c[0m
+[0.938s] [35m[1mConsolidate compiler generated dependencies of target panda_move__rosidl_typesupport_introspection_c[0m
+[0.939s] [35m[1mConsolidate compiler generated dependencies of target panda_move__rosidl_typesupport_fastrtps_c[0m
+[0.943s] [ 29%] Built target panda_move__rosidl_typesupport_c
+[0.943s] [ 43%] Built target panda_move__rosidl_typesupport_introspection_c
+[0.944s] [ 57%] Built target panda_move__rosidl_typesupport_cpp
+[0.944s] [ 71%] Built target panda_move__rosidl_typesupport_introspection_cpp
+[0.945s] [ 85%] Built target panda_move__rosidl_typesupport_fastrtps_cpp
+[0.946s] [100%] Built target panda_move__rosidl_typesupport_fastrtps_c
+[0.954s] [100%] Built target panda_move
+[0.958s] Invoked command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move' returned '0': CMAKE_PREFIX_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_moveit_config:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/franka_description:/opt/ros/humble LD_LIBRARY_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib:/usr/local/cuda-12.4/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.4/lib64 /usr/bin/cmake --build /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move -- -j16 -l16
+[0.958s] Invoking command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move': CMAKE_PREFIX_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_moveit_config:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/franka_description:/opt/ros/humble LD_LIBRARY_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib:/usr/local/cuda-12.4/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.4/lib64 /usr/bin/cmake --install /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move
+[0.961s] -- Install configuration: ""
+[0.961s] -- Execute custom install script
+[0.961s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/ament_index/resource_index/rosidl_interfaces/panda_move
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/action.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__functions.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__struct.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__type_support.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__functions.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__struct.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__type_support.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__functions.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__struct.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__type_support.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/execution_check.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/predicate.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/rosidl_generator_c__visibility_control.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/action_sequences.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__functions.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__struct.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__type_support.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__functions.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__struct.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__type_support.h
+[0.962s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__functions.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__struct.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__type_support.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__functions.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__struct.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__type_support.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__functions.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__struct.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__type_support.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__functions.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__struct.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__type_support.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__functions.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__struct.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__type_support.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/hand.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/init.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/motion_check.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/new_state.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/plan.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/sync.h
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/environment/library_path.sh
+[0.963s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/environment/library_path.dsv
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__rosidl_typesupport_fastrtps_c.h
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/action.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__builder.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__struct.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__traits.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__type_support.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__builder.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__struct.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__traits.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__type_support.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__builder.hpp
+[0.964s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__struct.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__traits.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__type_support.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/execution_check.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/predicate.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/action_sequences.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__builder.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__struct.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__traits.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__type_support.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__builder.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__struct.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__traits.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__type_support.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__builder.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__struct.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__traits.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__type_support.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__builder.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__struct.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__traits.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__type_support.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__builder.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__struct.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__traits.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__type_support.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__builder.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__struct.hpp
+[0.965s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__traits.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__type_support.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__builder.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__struct.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__traits.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__type_support.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/hand.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/init.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/motion_check.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/new_state.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/plan.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/sync.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__rosidl_typesupport_fastrtps_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__rosidl_typesupport_fastrtps_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__rosidl_typesupport_introspection_c.h
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/action__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/execution_check__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/msg/detail/predicate__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/action_sequences__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/hand__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/init__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/motion_check__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/new_state__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/plan__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/include/panda_move/panda_move/srv/detail/sync__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/msg/Action.idl
+[0.967s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/msg/Predicate.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/msg/ExecutionCheck.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Init.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Sync.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Plan.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Hand.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/MotionCheck.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/ActionSequences.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/NewState.idl
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/msg/Action.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/msg/Predicate.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/msg/ExecutionCheck.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Init.srv
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Init_Request.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Init_Response.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Sync.srv
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Sync_Request.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Sync_Response.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Plan.srv
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Plan_Request.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Plan_Response.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Hand.srv
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Hand_Request.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/Hand_Response.msg
+[0.968s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/MotionCheck.srv
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/MotionCheck_Request.msg
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/MotionCheck_Response.msg
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/ActionSequences.srv
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/ActionSequences_Request.msg
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/ActionSequences_Response.msg
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/NewState.srv
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/NewState_Request.msg
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/srv/NewState_Response.msg
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/__init__.py
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/__init__.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/__pycache__/club_sandwich.cpython-310.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/__pycache__/greek_salad.cpython-310.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/__pycache__/shrimp_salad.cpython-310.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/__pycache__/tuna_sandwich.cpython-310.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/club_sandwich.py
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/club_sandwich.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/domain.py
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/domain.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/greek_salad.py
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/greek_salad.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/knowledge_base.pyc
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/knowledge_base.yaml
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/main_ros2.py
+[0.969s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/object_level_motion.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/planner.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/planner.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/problem.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/problem.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/searcher.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/searcher.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/shrimp_salad.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/shrimp_salad.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_15_predict3_v2.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_15_predict3_v2.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_33_predict2_v2.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_33_predict2_v2.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_35_predict_v2.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_35_predict_v2.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_49_predict2_v2.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_49_predict2_v2.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_62_predict_v2.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_62_predict_v2.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_75_predict_v2.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_75_predict_v2.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_80_predict2_v2.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/test_80_predict2_v2.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/tuna_sandwich.py
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/panda_move/tuna_sandwich.pyc
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/srv/ActionSequences.srv
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/srv/Hand.srv
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/srv/Init.srv
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/srv/MotionCheck.srv
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/srv/NewState.srv
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/srv/Plan.srv
+[0.970s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/srv/Sync.srv
+[0.974s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/default_v2/test_club_sandwich_v2.csv
+[0.977s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/default_v2/test_greek_salad_v2.csv
+[0.979s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/default_v2/test_shrimp_salad_v2.csv
+[0.982s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/default_v2/test_tuna_sandwich_v2 copy.csv
+[0.985s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/default_v2/test_tuna_sandwich_v2.csv
+[0.988s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_0_label2_v2.csv
+[0.990s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_10_label2_v2.csv
+[0.993s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_11_label2_v2.csv
+[0.996s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_12_label2_v2.csv
+[0.998s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_13_label2_v2.csv
+[1.001s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_14_label2_v2.csv
+[1.003s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_15_label2_v2.csv
+[1.006s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_16_label2_v2.csv
+[1.009s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_17_label2_v2.csv
+[1.011s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_18_label2_v2.csv
+[1.014s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_19_label2_v2.csv
+[1.017s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_1_label2_v2.csv
+[1.020s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_20_label2_v2.csv
+[1.022s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_21_label2_v2.csv
+[1.025s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_22_label2_v2.csv
+[1.028s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_23_label2_v2.csv
+[1.030s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_24_label2_v2.csv
+[1.033s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_25_label2_v2.csv
+[1.036s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_26_label2_v2.csv
+[1.039s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_27_label2_v2.csv
+[1.041s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_28_label2_v2.csv
+[1.044s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_29_label2_v2.csv
+[1.047s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_2_label2_v2.csv
+[1.049s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_30_label2_v2.csv
+[1.052s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_31_label2_v2.csv
+[1.055s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_32_label2_v2.csv
+[1.057s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_33_label2_v2.csv
+[1.060s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_34_label2_v2.csv
+[1.062s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_35_label2_v2.csv
+[1.065s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_36_label2_v2.csv
+[1.068s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_37_label2_v2.csv
+[1.070s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_38_label2_v2.csv
+[1.073s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_39_label2_v2.csv
+[1.076s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_3_label2_v2.csv
+[1.078s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_40_label2_v2.csv
+[1.081s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_41_label2_v2.csv
+[1.083s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_42_label2_v2.csv
+[1.086s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_43_label2_v2.csv
+[1.089s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_44_label2_v2.csv
+[1.091s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_45_label2_v2.csv
+[1.094s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_46_label2_v2.csv
+[1.097s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_47_label2_v2.csv
+[1.100s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_48_label2_v2.csv
+[1.102s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_49_label2_v2.csv
+[1.105s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_4_label2_v2.csv
+[1.107s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_50_label2_v2.csv
+[1.110s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_51_label2_v2.csv
+[1.112s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_52_label2_v2.csv
+[1.115s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_53_label2_v2.csv
+[1.118s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_54_label2_v2.csv
+[1.120s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_55_label2_v2.csv
+[1.123s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_56_label2_v2.csv
+[1.127s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_57_label2_v2.csv
+[1.129s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_58_label2_v2.csv
+[1.132s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_59_label2_v2.csv
+[1.135s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_5_label2_v2.csv
+[1.138s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_60_label2_v2.csv
+[1.140s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_61_label2_v2.csv
+[1.144s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_62_label2_v2.csv
+[1.146s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_63_label2_v2.csv
+[1.149s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_64_label2_v2.csv
+[1.152s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_65_label2_v2.csv
+[1.155s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_66_label2_v2.csv
+[1.158s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_67_label2_v2.csv
+[1.160s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_68_label2_v2.csv
+[1.163s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_69_label2_v2.csv
+[1.166s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_6_label2_v2.csv
+[1.168s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_70_label2_v2.csv
+[1.171s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_71_label2_v2.csv
+[1.173s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_72_label2_v2.csv
+[1.176s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_73_label2_v2.csv
+[1.179s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_74_label2_v2.csv
+[1.181s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_75_label2_v2.csv
+[1.184s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_76_label2_v2.csv
+[1.187s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_77_label2_v2.csv
+[1.189s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_78_label2_v2.csv
+[1.192s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_79_label2_v2.csv
+[1.194s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_7_label2_v2.csv
+[1.198s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_80_label2_v2.csv
+[1.201s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_81_label2_v2.csv
+[1.203s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_82_label2_v2.csv
+[1.206s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_83_label2_v2.csv
+[1.208s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_84_label2_v2.csv
+[1.211s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_85_label2_v2.csv
+[1.214s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_86_label2_v2.csv
+[1.217s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_87_label2_v2.csv
+[1.219s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_8_label2_v2.csv
+[1.222s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label2_v2/test_9_label2_v2.csv
+[1.225s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_0_label_v2.csv
+[1.228s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_10_label_v2.csv
+[1.231s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_11_label_v2.csv
+[1.233s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_12_label_v2.csv
+[1.236s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_13_label_v2.csv
+[1.239s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_14_label_v2.csv
+[1.242s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_15_label_v2.csv
+[1.244s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_16_label_v2.csv
+[1.247s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_17_label_v2.csv
+[1.249s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_18_label_v2.csv
+[1.252s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_19_label_v2.csv
+[1.255s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_1_label_v2.csv
+[1.258s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_20_label_v2.csv
+[1.260s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_21_label_v2.csv
+[1.263s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_22_label_v2.csv
+[1.265s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_23_label_v2.csv
+[1.268s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_24_label_v2.csv
+[1.270s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_25_label_v2.csv
+[1.273s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_26_label_v2.csv
+[1.276s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_27_label_v2.csv
+[1.278s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_28_label_v2.csv
+[1.281s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_29_label_v2.csv
+[1.283s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_2_label_v2.csv
+[1.286s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_30_label_v2.csv
+[1.289s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_31_label_v2.csv
+[1.291s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_32_label_v2.csv
+[1.294s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_33_label_v2.csv
+[1.296s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_34_label_v2.csv
+[1.299s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_35_label_v2.csv
+[1.302s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_36_label_v2.csv
+[1.304s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_37_label_v2.csv
+[1.307s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_38_label_v2.csv
+[1.309s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_39_label_v2.csv
+[1.312s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_3_label_v2.csv
+[1.315s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_40_label_v2.csv
+[1.317s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_41_label_v2.csv
+[1.320s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_42_label_v2.csv
+[1.323s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_43_label_v2.csv
+[1.325s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_44_label_v2.csv
+[1.328s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_45_label_v2.csv
+[1.331s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_46_label_v2.csv
+[1.333s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_47_label_v2.csv
+[1.336s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_48_label_v2.csv
+[1.339s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_49_label_v2.csv
+[1.342s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_4_label_v2.csv
+[1.344s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_50_label_v2.csv
+[1.347s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_51_label_v2.csv
+[1.350s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_52_label_v2.csv
+[1.352s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_53_label_v2.csv
+[1.355s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_54_label_v2.csv
+[1.357s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_55_label_v2.csv
+[1.360s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_56_label_v2.csv
+[1.363s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_57_label_v2.csv
+[1.366s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_58_label_v2.csv
+[1.368s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_59_label_v2.csv
+[1.371s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_5_label_v2.csv
+[1.374s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_60_label_v2.csv
+[1.376s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_61_label_v2.csv
+[1.379s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_62_label_v2.csv
+[1.381s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_63_label_v2.csv
+[1.384s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_64_label_v2.csv
+[1.387s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_65_label_v2.csv
+[1.389s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_66_label_v2.csv
+[1.392s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_67_label_v2.csv
+[1.395s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_68_label_v2.csv
+[1.397s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_69_label_v2.csv
+[1.400s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_6_label_v2.csv
+[1.403s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_70_label_v2.csv
+[1.405s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_71_label_v2.csv
+[1.408s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_72_label_v2.csv
+[1.410s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_73_label_v2.csv
+[1.413s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_74_label_v2.csv
+[1.416s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_75_label_v2.csv
+[1.418s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_76_label_v2.csv
+[1.421s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_77_label_v2.csv
+[1.424s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_78_label_v2.csv
+[1.426s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_79_label_v2.csv
+[1.429s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_7_label_v2.csv
+[1.432s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_80_label_v2.csv
+[1.434s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_81_label_v2.csv
+[1.437s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_82_label_v2.csv
+[1.440s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_83_label_v2.csv
+[1.442s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_84_label_v2.csv
+[1.445s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_85_label_v2.csv
+[1.448s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_86_label_v2.csv
+[1.450s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_87_label_v2.csv
+[1.453s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_8_label_v2.csv
+[1.456s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/label_v2/test_9_label_v2.csv
+[1.459s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_0_info.txt
+[1.462s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_0_label.csv
+[1.464s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_0_predict.csv
+[1.467s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_10_info.txt
+[1.469s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_10_label.csv
+[1.472s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_10_predict.csv
+[1.475s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_11_info.txt
+[1.477s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_11_label.csv
+[1.480s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_11_predict.csv
+[1.483s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_12_info.txt
+[1.485s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_12_label.csv
+[1.488s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_12_predict.csv
+[1.491s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_13_info.txt
+[1.493s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_13_label.csv
+[1.496s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_13_predict.csv
+[1.499s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_14_info.txt
+[1.502s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_14_label.csv
+[1.505s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_14_predict.csv
+[1.507s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_15_info.txt
+[1.510s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_15_label.csv
+[1.512s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_15_predict.csv
+[1.515s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_16_info.txt
+[1.517s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_16_label.csv
+[1.520s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_16_predict.csv
+[1.523s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_17_info.txt
+[1.525s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_17_label.csv
+[1.528s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_17_predict.csv
+[1.530s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_18_info.txt
+[1.533s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_18_label.csv
+[1.536s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_18_predict.csv
+[1.539s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_19_info.txt
+[1.541s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_19_label.csv
+[1.543s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_19_predict.csv
+[1.546s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_1_info.txt
+[1.549s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_1_label.csv
+[1.551s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_1_predict.csv
+[1.554s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_20_info.txt
+[1.556s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_20_label.csv
+[1.559s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_20_label_.csv
+[1.562s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_20_predict.csv
+[1.564s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_21_info.txt
+[1.567s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_21_label.csv
+[1.569s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_21_predict.csv
+[1.572s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_22_info.txt
+[1.574s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_22_label.csv
+[1.577s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_22_predict.csv
+[1.580s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_23_info.txt
+[1.582s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_23_label.csv
+[1.585s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_23_predict.csv
+[1.588s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_24_info.txt
+[1.590s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_24_label.csv
+[1.593s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_24_predict.csv
+[1.595s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_25_info.txt
+[1.598s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_25_label.csv
+[1.600s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_25_predict.csv
+[1.603s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_26_info.txt
+[1.606s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_26_label.csv
+[1.608s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_26_predict.csv
+[1.611s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_27_info.txt
+[1.613s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_27_label.csv
+[1.616s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_27_predict.csv
+[1.619s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_28_info.txt
+[1.621s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_28_label.csv
+[1.624s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_28_predict.csv
+[1.627s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_29_info.txt
+[1.629s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_29_label.csv
+[1.632s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_29_predict.csv
+[1.635s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_2_info.txt
+[1.638s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_2_label.csv
+[1.641s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_2_predict.csv
+[1.643s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_30_info.txt
+[1.646s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_30_label.csv
+[1.649s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_30_predict.csv
+[1.651s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_31_info.txt
+[1.654s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_31_label.csv
+[1.657s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_31_predict.csv
+[1.659s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_32_info.txt
+[1.662s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_32_label.csv
+[1.664s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_32_predict.csv
+[1.667s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_33_info.txt
+[1.670s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_33_label.csv
+[1.672s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_33_predict.csv
+[1.675s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_34_info.txt
+[1.678s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_34_label.csv
+[1.680s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_34_predict.csv
+[1.683s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_35_info.txt
+[1.686s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_35_label.csv
+[1.688s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_35_predict.csv
+[1.691s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_36_info.txt
+[1.693s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_36_label.csv
+[1.696s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_36_predict.csv
+[1.698s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_37_info.txt
+[1.701s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_37_label.csv
+[1.704s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_37_predict.csv
+[1.706s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_38_info.txt
+[1.709s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_38_label.csv
+[1.712s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_38_predict.csv
+[1.715s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_39_info.txt
+[1.718s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_39_label.csv
+[1.721s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_39_predict.csv
+[1.723s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_3_info.txt
+[1.726s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_3_label.csv
+[1.728s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_3_predict.csv
+[1.731s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_40_info.txt
+[1.734s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_40_label.csv
+[1.737s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_40_predict.csv
+[1.739s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_41_info.txt
+[1.742s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_41_label.csv
+[1.744s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_41_predict.csv
+[1.747s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_42_info.txt
+[1.750s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_42_label.csv
+[1.752s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_42_predict.csv
+[1.755s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_43_info.txt
+[1.757s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_43_label.csv
+[1.760s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_43_predict.csv
+[1.763s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_44_info.txt
+[1.765s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_44_label.csv
+[1.768s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_44_predict.csv
+[1.771s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_45_info.txt
+[1.773s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_45_label.csv
+[1.776s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_45_predict.csv
+[1.778s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_46_info.txt
+[1.781s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_46_label.csv
+[1.784s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_46_predict.csv
+[1.786s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_47_info.txt
+[1.789s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_47_label.csv
+[1.792s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_47_predict.csv
+[1.794s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_48_info.txt
+[1.797s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_48_label.csv
+[1.799s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_48_predict.csv
+[1.802s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_49_info.txt
+[1.804s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_49_label.csv
+[1.807s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_49_predict.csv
+[1.809s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_4_info.txt
+[1.812s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_4_label.csv
+[1.815s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_4_predict.csv
+[1.818s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_50_info.txt
+[1.820s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_50_label.csv
+[1.823s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_50_predict.csv
+[1.826s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_51_info.txt
+[1.829s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_51_label.csv
+[1.840s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_51_predict.csv
+[1.843s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_52_info.txt
+[1.846s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_52_label.csv
+[1.848s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_52_predict.csv
+[1.851s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_53_info.txt
+[1.854s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_53_label.csv
+[1.856s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_53_predict.csv
+[1.859s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_54_info.txt
+[1.861s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_54_label.csv
+[1.864s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_54_predict.csv
+[1.867s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_55_info.txt
+[1.869s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_55_label.csv
+[1.872s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_55_predict.csv
+[1.874s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_56_info.txt
+[1.877s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_56_label.csv
+[1.880s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_56_predict.csv
+[1.882s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_57_info.txt
+[1.885s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_57_label.csv
+[1.888s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_57_predict.csv
+[1.890s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_58_info.txt
+[1.893s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_58_label.csv
+[1.895s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_58_predict.csv
+[1.898s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_59_info.txt
+[1.901s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_59_label.csv
+[1.903s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_59_predict.csv
+[1.906s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_5_info.txt
+[1.908s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_5_label.csv
+[1.911s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_5_predict.csv
+[1.914s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_60_info.txt
+[1.916s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_60_label.csv
+[1.919s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_60_predict.csv
+[1.922s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_61_info.txt
+[1.924s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_61_label.csv
+[1.927s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_61_predict.csv
+[1.930s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_62_info.txt
+[1.932s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_62_label.csv
+[1.935s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_62_predict.csv
+[1.938s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_63_info.txt
+[1.940s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_63_label.csv
+[1.943s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_63_predict.csv
+[1.946s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_64_info.txt
+[1.948s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_64_label.csv
+[1.951s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_64_predict.csv
+[1.954s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_65_info.txt
+[1.956s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_65_label.csv
+[1.959s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_65_predict.csv
+[1.962s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_66_info.txt
+[1.965s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_66_label.csv
+[1.967s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_66_predict.csv
+[1.970s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_67_info.txt
+[1.973s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_67_label.csv
+[1.975s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_67_predict.csv
+[1.978s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_68_info.txt
+[1.980s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_68_label.csv
+[1.983s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_68_predict.csv
+[1.986s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_69_info.txt
+[1.989s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_69_label.csv
+[1.991s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_69_predict.csv
+[1.994s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_6_info.txt
+[1.997s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_6_label.csv
+[1.999s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_6_predict.csv
+[2.002s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_70_info.txt
+[2.005s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_70_label.csv
+[2.007s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_70_predict.csv
+[2.011s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_71_info.txt
+[2.014s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_71_label.csv
+[2.016s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_71_predict.csv
+[2.019s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_72_info.txt
+[2.022s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_72_label.csv
+[2.025s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_72_predict.csv
+[2.027s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_73_info.txt
+[2.030s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_73_label.csv
+[2.033s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_73_predict.csv
+[2.036s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_74_info.txt
+[2.038s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_74_label.csv
+[2.041s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_74_predict.csv
+[2.044s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_75_info.txt
+[2.047s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_75_label.csv
+[2.050s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_75_predict.csv
+[2.052s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_76_info.txt
+[2.055s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_76_label.csv
+[2.058s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_76_predict.csv
+[2.060s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_77_info.txt
+[2.063s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_77_label.csv
+[2.065s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_77_predict.csv
+[2.068s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_78_info.txt
+[2.071s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_78_label.csv
+[2.073s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_78_predict.csv
+[2.076s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_79_info.txt
+[2.079s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_79_label.csv
+[2.081s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_79_predict.csv
+[2.084s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_7_info.txt
+[2.086s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_7_label.csv
+[2.089s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_7_predict.csv
+[2.092s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_80_info.txt
+[2.095s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_80_label.csv
+[2.097s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_80_predict.csv
+[2.100s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_81_info.txt
+[2.102s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_81_label.csv
+[2.105s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_81_predict.csv
+[2.108s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_82_info.txt
+[2.111s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_82_label.csv
+[2.114s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_82_predict.csv
+[2.117s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_83_info.txt
+[2.119s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_83_label.csv
+[2.122s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_83_predict.csv
+[2.125s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_84_info.txt
+[2.127s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_84_label.csv
+[2.130s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_84_predict.csv
+[2.133s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_85_info.txt
+[2.136s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_85_label.csv
+[2.139s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_85_predict.csv
+[2.141s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_86_info.txt
+[2.144s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_86_label.csv
+[2.147s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_86_predict.csv
+[2.149s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_87_info.txt
+[2.152s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_87_label.csv
+[2.155s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_87_predict.csv
+[2.157s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_8_info.txt
+[2.160s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_8_label.csv
+[2.162s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_8_predict.csv
+[2.165s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_9_info.txt
+[2.168s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_9_label.csv
+[2.170s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original/test_9_predict.csv
+[2.173s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_0_info.txt
+[2.176s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_0_label.csv
+[2.178s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_0_predict.csv
+[2.181s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_10_info.txt
+[2.183s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_10_label.csv
+[2.186s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_10_predict.csv
+[2.189s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_11_info.txt
+[2.192s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_11_label.csv
+[2.194s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_11_predict.csv
+[2.198s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_12_info.txt
+[2.200s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_12_label.csv
+[2.203s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_12_predict.csv
+[2.205s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_13_info.txt
+[2.208s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_13_label.csv
+[2.211s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_13_predict.csv
+[2.213s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_14_info.txt
+[2.216s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_14_label.csv
+[2.219s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_14_predict.csv
+[2.221s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_15_info.txt
+[2.224s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_15_label.csv
+[2.227s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_15_predict.csv
+[2.230s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_16_info.txt
+[2.232s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_16_label.csv
+[2.235s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_16_predict.csv
+[2.238s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_17_info.txt
+[2.240s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_17_label.csv
+[2.243s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_17_predict.csv
+[2.245s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_18_info.txt
+[2.248s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_18_label.csv
+[2.251s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_18_predict.csv
+[2.254s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_19_info.txt
+[2.257s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_19_label.csv
+[2.260s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_19_predict.csv
+[2.263s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_1_info.txt
+[2.265s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_1_label.csv
+[2.268s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_1_predict.csv
+[2.271s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_20_info.txt
+[2.273s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_20_label.csv
+[2.276s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_20_predict.csv
+[2.279s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_21_info.txt
+[2.281s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_21_label.csv
+[2.284s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_21_predict.csv
+[2.286s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_22_info.txt
+[2.289s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_22_label.csv
+[2.292s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_22_predict.csv
+[2.294s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_23_info.txt
+[2.297s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_23_label.csv
+[2.300s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_23_predict.csv
+[2.302s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_24_info.txt
+[2.305s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_24_label.csv
+[2.307s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_24_predict.csv
+[2.310s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_25_info.txt
+[2.313s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_25_label.csv
+[2.316s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_25_predict.csv
+[2.318s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_26_info.txt
+[2.321s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_26_label.csv
+[2.324s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_26_predict.csv
+[2.326s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_27_info.txt
+[2.329s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_27_label.csv
+[2.332s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_27_predict.csv
+[2.335s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_28_info.txt
+[2.337s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_28_label.csv
+[2.340s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_28_predict.csv
+[2.343s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_29_info.txt
+[2.345s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_29_label.csv
+[2.348s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_29_predict.csv
+[2.351s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_2_info.txt
+[2.354s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_2_label.csv
+[2.356s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_2_predict.csv
+[2.359s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_30_info.txt
+[2.362s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_30_label.csv
+[2.365s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_30_predict.csv
+[2.368s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_31_info.txt
+[2.370s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_31_label.csv
+[2.373s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_31_predict.csv
+[2.376s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_32_info.txt
+[2.378s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_32_label.csv
+[2.381s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_32_predict.csv
+[2.383s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_33_info.txt
+[2.386s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_33_label.csv
+[2.389s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_33_predict.csv
+[2.392s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_34_info.txt
+[2.394s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_34_label.csv
+[2.397s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_34_predict.csv
+[2.400s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_35_info.txt
+[2.402s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_35_label.csv
+[2.405s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_35_predict.csv
+[2.407s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_36_info.txt
+[2.411s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_36_label.csv
+[2.413s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_36_predict.csv
+[2.416s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_37_info.txt
+[2.419s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_37_label.csv
+[2.421s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_37_predict.csv
+[2.424s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_38_info.txt
+[2.427s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_38_label.csv
+[2.429s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_38_predict.csv
+[2.432s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_39_info.txt
+[2.435s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_39_label.csv
+[2.438s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_39_predict.csv
+[2.441s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_3_info.txt
+[2.443s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_3_label.csv
+[2.446s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_3_predict.csv
+[2.449s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_40_info.txt
+[2.451s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_40_label.csv
+[2.454s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_40_predict.csv
+[2.456s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_41_info.txt
+[2.459s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_41_label.csv
+[2.462s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_41_predict.csv
+[2.464s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_42_info.txt
+[2.467s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_42_label.csv
+[2.470s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_42_predict.csv
+[2.472s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_43_info.txt
+[2.475s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_43_label.csv
+[2.477s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_43_predict.csv
+[2.480s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_44_info.txt
+[2.482s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_44_label.csv
+[2.485s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_44_predict.csv
+[2.488s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_45_info.txt
+[2.490s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_45_label.csv
+[2.493s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_45_predict.csv
+[2.496s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_46_info.txt
+[2.499s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_46_label.csv
+[2.501s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_46_predict.csv
+[2.504s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_47_info.txt
+[2.507s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_47_label.csv
+[2.509s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_47_predict.csv
+[2.512s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_48_info.txt
+[2.514s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_48_label.csv
+[2.517s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_48_predict.csv
+[2.519s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_49_info.txt
+[2.522s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_49_label.csv
+[2.525s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_49_predict.csv
+[2.527s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_4_info.txt
+[2.530s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_4_label.csv
+[2.533s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_4_predict.csv
+[2.535s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_50_info.txt
+[2.538s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_50_label.csv
+[2.541s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_50_predict.csv
+[2.543s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_51_info.txt
+[2.546s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_51_label.csv
+[2.548s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_51_predict.csv
+[2.551s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_52_info.txt
+[2.554s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_52_label.csv
+[2.556s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_52_predict.csv
+[2.559s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_53_info.txt
+[2.561s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_53_label.csv
+[2.564s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_53_predict.csv
+[2.567s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_54_info.txt
+[2.569s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_54_label.csv
+[2.572s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_54_predict.csv
+[2.575s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_55_info.txt
+[2.578s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_55_label.csv
+[2.580s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_55_predict.csv
+[2.583s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_56_info.txt
+[2.586s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_56_label.csv
+[2.589s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_56_predict.csv
+[2.592s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_57_info.txt
+[2.594s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_57_label.csv
+[2.597s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_57_predict.csv
+[2.600s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_58_info.txt
+[2.603s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_58_label.csv
+[2.605s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_58_predict.csv
+[2.608s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_59_info.txt
+[2.611s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_59_label.csv
+[2.614s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_59_predict.csv
+[2.616s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_5_info.txt
+[2.619s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_5_label.csv
+[2.622s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_5_predict.csv
+[2.625s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_60_info.txt
+[2.627s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_60_label.csv
+[2.630s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_60_predict.csv
+[2.633s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_61_info.txt
+[2.636s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_61_label.csv
+[2.638s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_61_predict.csv
+[2.641s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_62_info.txt
+[2.644s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_62_label.csv
+[2.646s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_62_predict.csv
+[2.649s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_63_info.txt
+[2.652s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_63_label.csv
+[2.655s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_63_predict.csv
+[2.658s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_64_info.txt
+[2.661s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_64_label.csv
+[2.664s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_64_predict.csv
+[2.666s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_65_info.txt
+[2.669s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_65_label.csv
+[2.671s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_65_predict.csv
+[2.674s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_66_info.txt
+[2.677s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_66_label.csv
+[2.679s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_66_predict.csv
+[2.682s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_67_info.txt
+[2.685s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_67_label.csv
+[2.687s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_67_predict.csv
+[2.690s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_68_info.txt
+[2.693s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_68_label.csv
+[2.695s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_68_predict.csv
+[2.698s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_69_info.txt
+[2.701s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_69_label.csv
+[2.704s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_69_predict.csv
+[2.706s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_6_info.txt
+[2.709s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_6_label.csv
+[2.711s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_6_predict.csv
+[2.714s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_70_info.txt
+[2.716s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_70_label.csv
+[2.719s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_70_predict.csv
+[2.722s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_71_info.txt
+[2.725s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_71_label.csv
+[2.728s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_71_predict.csv
+[2.730s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_72_info.txt
+[2.734s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_72_label.csv
+[2.736s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_72_predict.csv
+[2.739s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_73_info.txt
+[2.742s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_73_label.csv
+[2.744s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_73_predict.csv
+[2.747s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_74_info.txt
+[2.749s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_74_label.csv
+[2.752s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_74_predict.csv
+[2.755s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_75_info.txt
+[2.757s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_75_label.csv
+[2.760s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_75_predict.csv
+[2.763s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_76_info.txt
+[2.766s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_76_label.csv
+[2.768s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_76_predict.csv
+[2.771s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_77_info.txt
+[2.773s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_77_label.csv
+[2.776s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_77_predict.csv
+[2.779s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_78_info.txt
+[2.781s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_78_label.csv
+[2.784s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_78_predict.csv
+[2.787s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_79_info.txt
+[2.789s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_79_label.csv
+[2.792s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_79_predict.csv
+[2.795s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_7_info.txt
+[2.798s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_7_label.csv
+[2.800s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_7_predict.csv
+[2.803s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_80_info.txt
+[2.805s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_80_label.csv
+[2.808s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_80_predict.csv
+[2.810s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_81_info.txt
+[2.813s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_81_label.csv
+[2.815s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_81_predict.csv
+[2.818s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_82_info.txt
+[2.821s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_82_label.csv
+[2.824s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_82_predict.csv
+[2.827s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_83_info.txt
+[2.829s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_83_label.csv
+[2.832s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_83_predict.csv
+[2.835s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_84_info.txt
+[2.838s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_84_label.csv
+[2.840s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_84_predict.csv
+[2.843s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_85_info.txt
+[2.846s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_85_label.csv
+[2.848s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_85_predict.csv
+[2.851s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_86_info.txt
+[2.854s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_86_label.csv
+[2.856s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_86_predict.csv
+[2.859s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_87_info.txt
+[2.862s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_87_label.csv
+[2.864s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_87_predict.csv
+[2.867s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_8_info.txt
+[2.869s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_8_label.csv
+[2.872s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_8_predict.csv
+[2.875s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_9_info.txt
+[2.878s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_9_label.csv
+[2.880s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/original2/test_9_predict.csv
+[2.884s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_0_predict2_v2.csv
+[2.887s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_10_predict2_v2.csv
+[2.889s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_11_predict2_v2.csv
+[2.892s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_12_predict2_v2.csv
+[2.894s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_13_predict2_v2.csv
+[2.897s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_14_predict2_v2.csv
+[2.899s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_15_predict2_v2.csv
+[2.902s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_16_predict2_v2.csv
+[2.905s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_17_predict2_v2.csv
+[2.908s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_18_predict2_v2.csv
+[2.910s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_19_predict2_v2.csv
+[2.913s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_1_predict2_v2.csv
+[2.915s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_20_predict2_v2.csv
+[2.918s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_21_predict2_v2.csv
+[2.921s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_22_predict2_v2.csv
+[2.924s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_23_predict2_v2.csv
+[2.926s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_24_predict2_v2.csv
+[2.929s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_25_predict2_v2.csv
+[2.932s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_26_predict2_v2.csv
+[2.935s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_27_predict2_v2.csv
+[2.938s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_28_predict2_v2.csv
+[2.940s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_29_predict2_v2.csv
+[2.943s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_2_predict2_v2.csv
+[2.945s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_30_predict2_v2.csv
+[2.948s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_31_predict2_v2.csv
+[2.951s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_32_predict2_v2.csv
+[2.953s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_33_predict2_v2.csv
+[2.956s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_34_predict2_v2.csv
+[2.959s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_35_predict2_v2.csv
+[2.962s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_36_predict2_v2.csv
+[2.964s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_37_predict2_v2.csv
+[2.967s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_38_predict2_v2.csv
+[2.970s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_39_predict2_v2.csv
+[2.972s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_3_predict2_v2.csv
+[2.975s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_40_predict2_v2.csv
+[2.977s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_41_predict2_v2.csv
+[2.980s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_42_predict2_v2.csv
+[2.982s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_43_predict2_v2.csv
+[2.985s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_44_predict2_v2.csv
+[2.987s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_45_predict2_v2.csv
+[2.990s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_46_predict2_v2.csv
+[2.993s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_47_predict2_v2.csv
+[2.996s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_48_predict2_v2.csv
+[2.998s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_49_predict2_v2.csv
+[3.002s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_4_predict2_v2.csv
+[3.004s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_50_predict2_v2.csv
+[3.007s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_51_predict2_v2.csv
+[3.009s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_52_predict2_v2.csv
+[3.012s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_53_predict2_v2.csv
+[3.014s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_54_predict2_v2.csv
+[3.017s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_55_predict2_v2.csv
+[3.020s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_56_predict2_v2.csv
+[3.022s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_57_predict2_v2.csv
+[3.025s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_58_predict2_v2.csv
+[3.028s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_59_predict2_v2.csv
+[3.030s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_5_predict2_v2.csv
+[3.033s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_60_predict2_v2.csv
+[3.036s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_61_predict2_v2.csv
+[3.039s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_62_predict2_v2.csv
+[3.042s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_63_predict2_v2.csv
+[3.044s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_64_predict2_v2.csv
+[3.047s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_65_predict2_v2.csv
+[3.050s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_66_predict2_v2.csv
+[3.052s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_67_predict2_v2.csv
+[3.055s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_68_predict2_v2.csv
+[3.058s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_69_predict2_v2.csv
+[3.060s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_6_predict2_v2.csv
+[3.063s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_70_predict2_v2.csv
+[3.065s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_71_predict2_v2.csv
+[3.068s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_72_predict2_v2.csv
+[3.071s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_73_predict2_v2.csv
+[3.073s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_74_predict2_v2.csv
+[3.076s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_75_predict2_v2.csv
+[3.078s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_76_predict2_v2.csv
+[3.081s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_77_predict2_v2.csv
+[3.084s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_78_predict2_v2.csv
+[3.086s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_79_predict2_v2.csv
+[3.089s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_7_predict2_v2.csv
+[3.091s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_80_predict2_v2.csv
+[3.094s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_81_predict2_v2.csv
+[3.097s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_82_predict2_v2.csv
+[3.099s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_83_predict2_v2.csv
+[3.102s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_84_predict2_v2.csv
+[3.105s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_85_predict2_v2.csv
+[3.107s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_86_predict2_v2.csv
+[3.111s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_87_predict2_v2.csv
+[3.113s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_8_predict2_v2.csv
+[3.116s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict2_v2/test_9_predict2_v2.csv
+[3.119s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/1.csv
+[3.122s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/10.csv
+[3.125s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/11.csv
+[3.128s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/12.csv
+[3.130s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/13.csv
+[3.133s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/14.csv
+[3.136s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/15.csv
+[3.138s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/16.csv
+[3.141s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/17.csv
+[3.143s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/18.csv
+[3.146s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/19.csv
+[3.149s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/2.csv
+[3.151s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/20.csv
+[3.155s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/3.csv
+[3.157s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/4.csv
+[3.160s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/5.csv
+[3.162s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/6.csv
+[3.165s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/7.csv
+[3.167s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/8.csv
+[3.171s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3/9.csv
+[3.173s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_10_predict3_v2.csv
+[3.176s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_11_predict3_v2.csv
+[3.179s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_12_predict3_v2.csv
+[3.181s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_13_predict3_v2.csv
+[3.184s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_14_predict3_v2.csv
+[3.187s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_15_predict3_v2.csv
+[3.189s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_16_predict3_v2.csv
+[3.192s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_17_predict3_v2.csv
+[3.195s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_18_predict3_v2.csv
+[3.198s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_19_predict3_v2.csv
+[3.200s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_1_predict3_v2.csv
+[3.203s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_20_predict3_v2.csv
+[3.206s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_2_predict3_v2.csv
+[3.209s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_3_predict3_v2.csv
+[3.212s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_4_predict3_v2.csv
+[3.215s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_5_predict3_v2.csv
+[3.219s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_6_predict3_v2.csv
+[3.221s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_7_predict3_v2.csv
+[3.224s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_8_predict3_v2.csv
+[3.227s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict3_v2/test_9_predict3_v2.csv
+[3.229s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_0_predict_v2.csv
+[3.232s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_10_predict_v2.csv
+[3.235s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_11_predict_v2.csv
+[3.237s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_12_predict_v2.csv
+[3.240s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_13_predict_v2.csv
+[3.243s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_14_predict_v2.csv
+[3.246s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_15_predict_v2.csv
+[3.248s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_16_predict_v2.csv
+[3.251s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_17_predict_v2.csv
+[3.254s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_18_predict_v2.csv
+[3.257s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_19_predict_v2.csv
+[3.259s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_1_predict_v2.csv
+[3.262s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_20_predict_v2.csv
+[3.265s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_21_predict_v2.csv
+[3.267s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_22_predict_v2.csv
+[3.270s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_23_predict_v2.csv
+[3.272s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_24_predict_v2.csv
+[3.275s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_25_predict_v2.csv
+[3.278s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_26_predict_v2.csv
+[3.280s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_27_predict_v2.csv
+[3.283s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_28_predict_v2.csv
+[3.285s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_29_predict_v2.csv
+[3.288s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_2_predict_v2.csv
+[3.291s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_30_predict_v2.csv
+[3.294s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_31_predict_v2.csv
+[3.296s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_32_predict_v2.csv
+[3.299s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_33_predict_v2.csv
+[3.302s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_34_predict_v2.csv
+[3.304s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_35_predict_v2.csv
+[3.307s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_36_predict_v2.csv
+[3.310s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_37_predict_v2.csv
+[3.313s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_38_predict_v2.csv
+[3.316s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_39_predict_v2.csv
+[3.319s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_3_predict_v2.csv
+[3.322s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_40_predict_v2.csv
+[3.324s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_41_predict_v2.csv
+[3.327s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_42_predict_v2.csv
+[3.330s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_43_predict_v2.csv
+[3.333s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_44_predict_v2.csv
+[3.335s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_45_predict_v2.csv
+[3.338s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_46_predict_v2.csv
+[3.340s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_47_predict_v2.csv
+[3.343s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_48_predict_v2.csv
+[3.346s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_49_predict_v2.csv
+[3.348s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_4_predict_v2.csv
+[3.351s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_50_predict_v2.csv
+[3.354s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_51_predict_v2.csv
+[3.356s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_52_predict_v2.csv
+[3.359s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_53_predict_v2.csv
+[3.362s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_54_predict_v2.csv
+[3.365s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_55_predict_v2.csv
+[3.367s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_56_predict_v2.csv
+[3.370s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_57_predict_v2.csv
+[3.373s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_58_predict_v2.csv
+[3.375s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_59_predict_v2.csv
+[3.378s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_5_predict_v2.csv
+[3.381s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_60_predict_v2.csv
+[3.383s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_61_predict_v2.csv
+[3.386s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_62_predict_v2.csv
+[3.388s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_63_predict_v2.csv
+[3.391s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_64_predict_v2.csv
+[3.393s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_65_predict_v2.csv
+[3.396s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_66_predict_v2.csv
+[3.399s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_67_predict_v2.csv
+[3.401s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_68_predict_v2.csv
+[3.404s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_69_predict_v2.csv
+[3.407s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_6_predict_v2.csv
+[3.409s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_70_predict_v2.csv
+[3.412s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_71_predict_v2.csv
+[3.416s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_72_predict_v2.csv
+[3.419s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_73_predict_v2.csv
+[3.422s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_74_predict_v2.csv
+[3.424s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_75_predict_v2.csv
+[3.427s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_76_predict_v2.csv
+[3.430s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_77_predict_v2.csv
+[3.432s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_78_predict_v2.csv
+[3.435s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_79_predict_v2.csv
+[3.438s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_7_predict_v2.csv
+[3.441s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_80_predict_v2.csv
+[3.443s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_81_predict_v2.csv
+[3.446s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_82_predict_v2.csv
+[3.449s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_83_predict_v2.csv
+[3.452s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_84_predict_v2.csv
+[3.454s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_85_predict_v2.csv
+[3.457s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_86_predict_v2.csv
+[3.460s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_87_predict_v2.csv
+[3.462s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_8_predict_v2.csv
+[3.465s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/panda_move/test_set/predict_v2/test_9_predict_v2.csv
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/ament_index/resource_index/package_run_dependencies/panda_move
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/ament_index/resource_index/parent_prefix_path/panda_move
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/environment/ament_prefix_path.sh
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/environment/ament_prefix_path.dsv
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/environment/path.sh
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/environment/path.dsv
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/local_setup.bash
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/local_setup.sh
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/local_setup.zsh
+[3.468s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/local_setup.dsv
+[3.468s] -- Symlinking: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/package.dsv
+[3.471s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/ament_index/resource_index/packages/panda_move
+[3.471s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/rosidl_cmake-extras.cmake
+[3.471s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.471s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.472s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/ament_cmake_export_libraries-extras.cmake
+[3.472s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/ament_cmake_export_targets-extras.cmake
+[3.472s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.472s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.472s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_moveConfig.cmake
+[3.472s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_moveConfig-version.cmake
+[3.472s] -- Up-to-date symlink: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/package.xml
+[3.472s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/libpanda_move__rosidl_generator_c.so
+[3.472s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/libpanda_move__rosidl_typesupport_fastrtps_c.so
+[3.472s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/libpanda_move__rosidl_typesupport_fastrtps_cpp.so
+[3.472s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/libpanda_move__rosidl_typesupport_introspection_c.so
+[3.472s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/libpanda_move__rosidl_typesupport_c.so
+[3.472s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/libpanda_move__rosidl_typesupport_introspection_cpp.so
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib/libpanda_move__rosidl_typesupport_cpp.so
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/export_panda_move__rosidl_generator_cExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/export_panda_move__rosidl_generator_cExport-noconfig.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/export_panda_move__rosidl_typesupport_fastrtps_cExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/export_panda_move__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/export_panda_move__rosidl_generator_cppExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/export_panda_move__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/export_panda_move__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_introspection_cExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_cExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_cExport-noconfig.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_introspection_cppExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_cppExport.cmake
+[3.473s] -- Up-to-date: /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/share/panda_move/cmake/panda_move__rosidl_typesupport_cppExport-noconfig.cmake
+[3.474s] Invoked command in '/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move' returned '0': CMAKE_PREFIX_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_moveit_config:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/franka_description:/opt/ros/humble LD_LIBRARY_PATH=/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/ros_tcp_endpoint/lib:/home/jeni/Cook_subgoal_test/unity_cooking/ROS2/install/panda_move/lib:/usr/local/cuda-12.4/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.4/lib64 /usr/bin/cmake --install /home/jeni/Cook_subgoal_test/unity_cooking/ROS2/build/panda_move
